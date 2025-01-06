@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 
