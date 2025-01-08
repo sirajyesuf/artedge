@@ -17,13 +17,13 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-sm fixed w-full z-50">
+    <nav className="bg-[#28316f] shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Shield className="h-7 w-7 md:h-8 md:w-8 text-blue-600" />
-              <span className="ml-2 text-lg md:text-xl font-bold text-gray-900">
+              <Shield className="h-7 w-7 md:h-8 md:w-8  text-white" />
+              <span className="ml-2 text-lg md:text-xl font-bold  text-white">
                 Art Edge Trading
               </span>
             </Link>
@@ -35,21 +35,21 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className=" text-white hover:text-[#ADD8E6] px-3 py-2 rounded-md text-md font-medium transition-colors"
               >
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            {/* <Button className="bg-blue-600 hover:bg-blue-700">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile menu button */}
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-blue-600 p-2"
+              className="text-white hover:text-[#ADD8E6] p-2"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -73,7 +73,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-600 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:text-[#ADD8E6] block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
