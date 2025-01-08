@@ -79,11 +79,11 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-          <div className="pt-2">
+          {/* <div className="pt-2">
             <Button className="w-full bg-blue-600 hover:bg-blue-700">
               Get Started
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
