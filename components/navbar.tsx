@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Shield, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +40,6 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
-            {/* <Button className="bg-blue-600 hover:bg-blue-700">
-              Get Started
-            </Button> */}
           </div>
 
           {/* Mobile menu button */}
@@ -79,11 +76,6 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-          {/* <div className="pt-2">
-            <Button className="w-full bg-blue-600 hover:bg-blue-700">
-              Get Started
-            </Button>
-          </div> */}
         </div>
       </div>
     </nav>
