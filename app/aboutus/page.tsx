@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 
 import Footer from "@/components/footer";
+import { Navbar } from "@/components/navbar";
 
 export default function AboutUs() {
   const ourcorevalues = [
@@ -68,6 +69,7 @@ export default function AboutUs() {
   ];
   return (
     <>
+      <Navbar></Navbar>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <div
