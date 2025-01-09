@@ -25,7 +25,7 @@ export default function Clients() {
   }, []);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    let intervalId: NodeJS.Timeout | undefined;
 
     if (isInView) {
       controls.start("visible");
@@ -44,10 +44,13 @@ export default function Clients() {
       }, 20);
     } else {
       controls.stop();
-      clearInterval(intervalId);
     }
 
-    return () => clearInterval(intervalId);
+    return () => {
+      if (intervalId !== undefined) {
+        clearInterval(intervalId);
+      }
+    };
   }, [isInView, controls]);
 
   return (
