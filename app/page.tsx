@@ -1,4 +1,4 @@
-import { Footer } from "@/components/footer";
+import  Footer  from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import WhyChooseUS from "@/components/whychooseus";
