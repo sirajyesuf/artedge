@@ -69,9 +69,20 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", system-ui, sans-serif;
+  }
 }
-
-
 
 @keyframes scroll {
   0% {
@@ -84,4 +95,16 @@ body {
 
 .animate-scroll {
   animation: scroll 20s linear infinite;
+}
+
+@keyframes numberScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
