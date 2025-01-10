@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import { Phone, Mail, MapPin, Send, ArrowRight } from "lucide-react";
 
-function App() {
+export default function ContactUSForm() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -12,11 +12,39 @@ function App() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission to a backend
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    const data = formData;
+
+    try {
+      const response = await fetch("/api/contactus", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      // toast({
+      //   title: "Success!",
+      //   description: "Your message has been sent successfully.",
+      // });
+      // form.reset();
+    } catch (error) {
+      // toast({
+      //   title: "Error",
+      //   description: "Failed to send message. Please try again later.",
+      //   variant: "destructive",
+      // });
+      console.log("Error sending message:", error);
+    } finally {
+      setSubmitted(false);
+    }
   };
 
   const handleChange = (
@@ -44,8 +72,8 @@ function App() {
               Get in Touch with Us
             </h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-              We&apos;re here to help with your security, cleaning, and professional
-              development needs.
+              We&apos;re here to help with your security, cleaning, and
+              professional development needs.
             </p>
           </div>
         </div>
@@ -251,5 +279,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
