@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Art Edge Trading Website
 
-## Getting Started
+This project is a modern, responsive website for **Art Edge Trading PLC**, built with **Next.js**. It showcases the company's services, achievements, and provides a contact form to send inquiries directly.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Landing Page:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   - Hero section highlighting Art Edge Trading's mission.
+   - Overview of services.
+   - Achievements section with dynamic statistics.
+   - Testimonials and "Why Choose Us" sections.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Service Details Pages:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   - Detailed information about each core service:
+     - Security Services
+     - Cleaning Services
+     - Provision of Cleaning Supplies
+     - Skill Development
+   - Icons and visuals for each sub-service.
 
-## Learn More
+3. **Contact Us Page:**
 
-To learn more about Next.js, take a look at the following resources:
+   - Inquiry form integrated with the backend (Next.js API routes).
+   - Google Maps integration for office location.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Responsive Design:**
+   - Fully optimized for desktop, tablet, and mobile devices.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - React.js (with Next.js framework)
+
+- **Backend:**
+
+  - Next.js API routes
+  - Nodemailer for email functionality
+
+- **Deployment:**
+  - Vercel for hosting
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sirajyesuf/artedge
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd artedge
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env.local` file in the root directory and add the following:
+
+   ```env
+   SMTP_HOST=
+   SMTP_PORT=465
+   SMTP_SECURE=true
+   SMTP_USER=
+   SMTP_PASSWORD=
+   SMTP_FROM=
+   SMTP_TO=
+
+   ```
+
+5. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   Access the site at [http://localhost:3000](http://localhost:3000).
