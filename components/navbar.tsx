@@ -4,15 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { Shield, Menu, X } from "lucide-react";
 
-
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "About", href: "/aboutus" },
-    { name: "Clients", href: "/clients" },
+    { name: "Services", href: "/#service_section" },
+    { name: "AboutUs", href: "/aboutus" },
     { name: "ContactUs", href: "/contactus" },
   ];
 
