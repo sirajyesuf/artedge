@@ -103,8 +103,7 @@ function App() {
         <div
           className="relative h-[60vh] bg-cover bg-center"
           style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&q=80")',
+            backgroundImage: `url("/public/security_service.jpg")`,
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -134,9 +133,9 @@ function App() {
               </p>
               <p className="text-gray-700 mb-6">
                 With years of experience in the industry, we understand that
-                security isn&apos;t just about physical presence – it&apos;s about
-                creating a robust system that prevents incidents before they
-                occur while maintaining a professional and welcoming
+                security isn&apos;t just about physical presence – it&apos;s
+                about creating a robust system that prevents incidents before
+                they occur while maintaining a professional and welcoming
                 environment.
               </p>
               <ul className="space-y-3">
@@ -220,7 +219,6 @@ function App() {
               </button> */}
               <button className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors">
                 Contact Us Today
-                
                 {/* <PhoneCall className="ml-2 w-5 h-5" /> */}
               </button>
             </div>
