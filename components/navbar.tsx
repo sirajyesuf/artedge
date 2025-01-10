@@ -13,7 +13,7 @@ export function Navbar() {
     { name: "Services", href: "/services" },
     { name: "About", href: "/aboutus" },
     { name: "Clients", href: "/clients" },
-    { name: "Contact", href: "/contact" },
+    { name: "ContactUs", href: "/contactus" },
   ];
 
   return (
