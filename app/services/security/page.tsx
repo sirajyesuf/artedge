@@ -103,7 +103,7 @@ function App() {
         <div
           className="relative h-[60vh] bg-cover bg-center"
           style={{
-            backgroundImage: `url("/public/security_service.jpg")`,
+            backgroundImage: `url("/security_service.jpg")`,
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50" />
