@@ -9,8 +9,63 @@ import {
   Clock,
   Leaf,
   Users,
-  ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
+const services = [
+  {
+    icon: <Building2 className="w-6 h-6 text-blue-600" />,
+    title: "Office Cleaning",
+    description:
+      "Professional cleaning services tailored for office spaces, ensuring a pristine work environment.",
+  },
+  {
+    icon: <Home className="w-6 h-6 text-blue-600" />,
+    title: "Residential Cleaning",
+    description:
+      "Comprehensive home cleaning services that maintain the comfort and hygiene of your living space.",
+  },
+  {
+    icon: <Factory className="w-6 h-6 text-blue-600" />,
+    title: "Industrial Cleaning",
+    description:
+      "Specialized cleaning solutions for industrial facilities, warehouses, and manufacturing plants.",
+  },
+  {
+    icon: <Brush className="w-6 h-6 text-blue-600" />,
+    title: "Post-Construction Cleaning",
+    description:
+      "Thorough cleanup services for newly constructed or renovated properties.",
+  },
+  {
+    icon: <Sparkles className="w-6 h-6 text-blue-600" />,
+    title: "Sanitization Services",
+    description:
+      "Advanced disinfection and sanitization solutions for germ-free environments.",
+  },
+];
+
+const features = [
+  {
+    icon: <Shield className="w-8 h-8 text-blue-600" />,
+    title: "Professional Excellence",
+    description: "Trained and certified cleaning experts",
+  },
+  {
+    icon: <Clock className="w-8 h-8 text-blue-600" />,
+    title: "Reliable Service",
+    description: "Punctual and consistent cleaning schedules",
+  },
+  {
+    icon: <Leaf className="w-8 h-8 text-blue-600" />,
+    title: "Eco-Friendly",
+    description: "Environmentally conscious cleaning solutions",
+  },
+  {
+    icon: <Users className="w-8 h-8 text-blue-600" />,
+    title: "Customer Satisfaction",
+    description: "Committed to exceeding expectations",
+  },
+];
 
 export default function Cleaning() {
   return (
@@ -20,10 +75,10 @@ export default function Cleaning() {
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold text-blue-900 mb-6 leading-tight">
+            <h1 className=" text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">
               Professional Cleaning Solutions for Every Space
             </h1>
-            <p className="text-xl text-blue-800 mb-6 leading-relaxed">
+            <p className="text-md md:text-xl text-blue-800 mb-6 leading-relaxed">
               At Art Edge, we deliver exceptional cleaning services tailored to
               your needs. From offices to homes, our expert team ensures
               spotless, healthy environments using eco-friendly solutions and
@@ -82,73 +137,15 @@ export default function Cleaning() {
           <h2 className="text-3xl font-bold text-white mb-8">
             Ready to Experience Our Professional Cleaning Services?
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 flex items-center justify-center">
-              Request a Quote
-              <ChevronRight className="ml-2 w-5 h-5" />
-            </button>
+          <div>
+            <Link href={"/contactus"}>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
               Contact Us Today
             </button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
-
-const services = [
-  {
-    icon: <Building2 className="w-6 h-6 text-blue-600" />,
-    title: "Office Cleaning",
-    description:
-      "Professional cleaning services tailored for office spaces, ensuring a pristine work environment.",
-  },
-  {
-    icon: <Home className="w-6 h-6 text-blue-600" />,
-    title: "Residential Cleaning",
-    description:
-      "Comprehensive home cleaning services that maintain the comfort and hygiene of your living space.",
-  },
-  {
-    icon: <Factory className="w-6 h-6 text-blue-600" />,
-    title: "Industrial Cleaning",
-    description:
-      "Specialized cleaning solutions for industrial facilities, warehouses, and manufacturing plants.",
-  },
-  {
-    icon: <Brush className="w-6 h-6 text-blue-600" />,
-    title: "Post-Construction Cleaning",
-    description:
-      "Thorough cleanup services for newly constructed or renovated properties.",
-  },
-  {
-    icon: <Sparkles className="w-6 h-6 text-blue-600" />,
-    title: "Sanitization Services",
-    description:
-      "Advanced disinfection and sanitization solutions for germ-free environments.",
-  },
-];
-
-const features = [
-  {
-    icon: <Shield className="w-8 h-8 text-blue-600" />,
-    title: "Professional Excellence",
-    description: "Trained and certified cleaning experts",
-  },
-  {
-    icon: <Clock className="w-8 h-8 text-blue-600" />,
-    title: "Reliable Service",
-    description: "Punctual and consistent cleaning schedules",
-  },
-  {
-    icon: <Leaf className="w-8 h-8 text-blue-600" />,
-    title: "Eco-Friendly",
-    description: "Environmentally conscious cleaning solutions",
-  },
-  {
-    icon: <Users className="w-8 h-8 text-blue-600" />,
-    title: "Customer Satisfaction",
-    description: "Committed to exceeding expectations",
-  },
-];
