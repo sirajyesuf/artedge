@@ -20,7 +20,7 @@ const Hero = () => {
               size="lg"
               className="w-full sm:w-auto bg-blue-500 text-white  font-bold rounded-lg hover:bg-blue-800"
             >
-              <Link href="/services">Explore Services</Link>
+              <Link href="/#service_section">Explore Services</Link>
             </Button>
             <Button
               asChild
@@ -28,7 +28,7 @@ const Hero = () => {
               variant="outline"
               className="w-full sm:w-auto bg-[#214186] text-white font-bold"
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contactus">Contact Us</Link>
             </Button>
           </div>
         </div>

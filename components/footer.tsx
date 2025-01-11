@@ -1,4 +1,5 @@
-import { Shield, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
@@ -7,12 +8,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center justify-center sm:justify-start">
-              <Shield className="h-7 w-7 md:h-8 md:w-8 text-blue-500" />
-              <span className="ml-2 text-lg md:text-xl font-bold">
-                Art Edge Trading
-              </span>
+              <Link href="/">
+                <Image
+                  src="/artedgelogowhite-removebg.png"
+                  alt="logo"
+                  width={160}
+                  height={200}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </Link>
             </div>
-            <p className="mt-4 text-gray-400 text-center sm:text-left text-sm md:text-base">
+            <p className="mt-2 text-gray-400 text-center sm:text-left text-sm md:text-base">
               Your trusted partner for security and cleaning excellence in
               Ethiopia.
             </p>
@@ -25,7 +31,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/services"
+                  href="/#service_section"
                   className="text-gray-400 hover:text-blue-500 text-sm md:text-base"
                 >
                   Services
@@ -33,7 +39,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/aboutus"
                   className="text-gray-400 hover:text-blue-500 text-sm md:text-base"
                 >
                   About Us
