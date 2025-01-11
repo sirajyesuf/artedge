@@ -22,9 +22,9 @@ const services = [
     href: "/services/cleaning",
   },
   {
-    title: "Provision of Cleaning Supplies",
+    title: "Provision of Security and Cleaning Supplies",
     description:
-      "High-quality cleaning supplies, including chemicals, tools, and personal protective equipment.",
+      "Providing high-quality security uniforms, cleaning supplies, tools, and personal protective equipment to ensure safety and efficiency",
     icon: Package,
     href: "/services/supplies",
   },
