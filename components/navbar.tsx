@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,15 +16,18 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#28316f] shadow-sm fixed w-full z-50">
+    <nav className="bg-[#28316f] shadow-none fixed w-full z-50 bg-[#214186]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <Shield className="h-7 w-7 md:h-8 md:w-8  text-white" />
-              <span className="ml-2 text-lg md:text-xl font-bold  text-white">
-                Art Edge Trading
-              </span>
+        <div className="flex justify-between h-20 p-2 items-center">
+          <div className="">
+            <Link href="/">
+              <Image
+                src="/artedgelogowhite-removebg.png"
+                alt="logo"
+                width={160}
+                height={200}
+                className="max-h-full max-w-full object-contain"
+              />
             </Link>
           </div>
 
@@ -33,7 +37,7 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className=" text-white hover:text-[#ADD8E6] px-3 py-2 rounded-md text-md font-medium transition-colors"
+                className=" text-white hover:text-[#ADD8E6] px-3 py-2 rounded-md text-lg font-extrabold transition-colors"
               >
                 {item.name}
               </Link>
