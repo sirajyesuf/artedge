@@ -4,27 +4,27 @@ import { Users, Briefcase, Award, CheckCircle } from "lucide-react";
 const achievements = [
   {
     icon: Users,
-    number: "500+",
-    description: "Satisfied clients across Ethiopia and beyond.",
+    number: "50+",
+    description: "Satisfied clients across Ethiopia.",
     color: "text-blue-500",
   },
   {
     icon: Briefcase,
-    number: "10+",
+    number: "4+",
     description:
       "Years of delivering excellence in security and cleaning services.",
     color: "text-blue-600",
   },
   {
     icon: Award,
-    number: "10,000+",
+    number: "1000+",
     description:
       "Skilled employees trained in security and janitorial services.",
     color: "text-blue-700",
   },
   {
     icon: CheckCircle,
-    number: "1,200+",
+    number: "100+",
     description:
       "Projects successfully completed for businesses and communities.",
     color: "text-blue-800",
