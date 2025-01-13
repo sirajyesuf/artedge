@@ -1,10 +1,5 @@
 import React from "react";
 import {
-  Shield,
-  CheckCircle2,
-  Clock,
-  Users,
-  Award,
   ShieldCheck,
   CalendarCheck,
   Package,
@@ -12,7 +7,7 @@ import {
   Camera,
   Zap,
 } from "lucide-react";
-
+import Link from "next/link";
 function ServiceFeature({
   icon: Icon,
   title,
@@ -30,31 +25,6 @@ function ServiceFeature({
     </div>
   );
 }
-
-// function Testimonial({
-//   content,
-//   author,
-//   company,
-// }: {
-//   content: string;
-//   author: string;
-//   company: string;
-// }) {
-//   return (
-//     <div className="bg-white p-6 rounded-lg shadow-md">
-//       <div className="flex gap-2 mb-4">
-//         {[...Array(5)].map((_, i) => (
-//           <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-//         ))}
-//       </div>
-//       <p className="text-gray-700 mb-4 italic">"{content}"</p>
-//       <div>
-//         <p className="font-semibold">{author}</p>
-//         <p className="text-sm text-gray-600">{company}</p>
-//       </div>
-//     </div>
-//   );
-// }
 
 const securitySolutions = [
   {
@@ -99,79 +69,26 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
-        <div
-          className="relative h-[60vh] bg-cover bg-center"
-          style={{
-            backgroundImage: `url("/security_service.jpg")`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-          <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
-            <h1 className="text-5xl font-bold text-white mb-4">
-              Security Services
-            </h1>
-            <p className="text-xl text-white max-w-2xl">
-              Professional security solutions tailored to protect your assets,
-              people, and peace of mind.
-            </p>
+        <div className="relative bg-blue-900 min-h-screen w-full overflow-hidden">
+          <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-white px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-montserrat">
+                Your Trusted Partner in Security Solutions
+              </h1>
+              <p className="text-xl sm:text-2xl mb-6 font-roboto">
+                Reliable, professional, and comprehensive security services
+                tailored to safeguard your people and assets.
+              </p>
+              <div className="flex items-center justify-center mb-8">
+                <ShieldCheck className="w-6 h-6 mr-2 text-yellow-400" />
+                <p className="text-lg sm:text-xl font-roboto">
+                  Serving businesses, events, and communities with unmatched
+                  expertise.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* About Service Section */}
-        <section className="py-16 container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            What We Offer
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-gray-700 mb-4">
-                At Art Edge Trading PLC, we provide comprehensive security
-                solutions that combine cutting-edge technology with highly
-                trained personnel. Our security services are designed to meet
-                the unique challenges of modern businesses and organizations.
-              </p>
-              <p className="text-gray-700 mb-6">
-                With years of experience in the industry, we understand that
-                security isn&apos;t just about physical presence – it&apos;s
-                about creating a robust system that prevents incidents before
-                they occur while maintaining a professional and welcoming
-                environment.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "24/7 Surveillance and Monitoring",
-                  "Highly Trained Security Personnel",
-                  "Emergency Response Protocols",
-                  "Access Control Systems",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-blue-600 rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-semibold mb-6">
-                Why Choose Our Security Services?
-              </h3>
-              <ul className="space-y-4">
-                {[
-                  { icon: Shield, text: "Industry-leading security protocols" },
-                  { icon: Clock, text: "24/7 availability and support" },
-                  { icon: Users, text: "Professionally trained staff" },
-                  { icon: Award, text: "Certified and licensed personnel" },
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <item.icon className="w-6 h-6" />
-                    <span>{item.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
 
         {/* Service Features */}
         <section className="py-16 bg-gray-100">
@@ -187,25 +104,6 @@ function App() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        {/* <section className="py-16 container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          What Our Clients Say
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <Testimonial
-            content="Art Edge's security services have transformed how we approach safety at our facilities. Their team is professional, vigilant, and always goes above and beyond."
-            author="Sarah Johnson"
-            company="Metro Commercial Properties"
-          />
-          <Testimonial
-            content="We've been impressed by the level of training and professionalism shown by Art Edge's security personnel. They're an integral part of our security strategy."
-            author="Michael Chen"
-            company="Global Tech Industries"
-          />
-        </div>
-      </section> */}
-
         {/* CTA Section */}
         <section className="py-16 bg-blue-600">
           <div className="container mx-auto px-4 text-center">
@@ -213,32 +111,12 @@ function App() {
               Ready to Enhance Your Security?
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {/* <button className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Request a Quote
-                <ChevronRight className="ml-2 w-5 h-5" />
-              </button> */}
               <button className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors">
-                Contact Us Today
-                {/* <PhoneCall className="ml-2 w-5 h-5" /> */}
+                <Link href="/contactus">Contact Us</Link>
               </button>
             </div>
           </div>
         </section>
-
-        {/* Footer CTA */}
-        {/* <section className="py-8 bg-gray-900 text-white">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <p className="text-lg mb-4 md:mb-0">
-                Discover how we can protect what matters most to you
-              </p>
-              <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Learn More
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </section> */}
       </div>
     </>
   );

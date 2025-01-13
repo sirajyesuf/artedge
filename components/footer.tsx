@@ -68,7 +68,7 @@ export default function Footer() {
             <h3 className="text-base md:text-lg font-semibold mb-4">
               Services
             </h3>
-            <ul className="space-y-2">
+            <div className="flex flex-col space-y-2">
               <Link
                 href="/services/security"
                 className="text-gray-400 text-sm md:text-base"
@@ -81,13 +81,13 @@ export default function Footer() {
               >
                 Cleaning Solutions
               </Link>
-              <li className="text-gray-400 text-sm md:text-base">
+              <Link href="/" className="text-gray-400 text-sm md:text-base">
                 Provision of Security and Cleaning Supplies
-              </li>
-              <li className="text-gray-400 text-sm md:text-base">
+              </Link>
+              <Link  href="/" className="text-gray-400 text-sm md:text-base">
                 Skill Development
-              </li>
-            </ul>
+              </Link> 
+            </div>
           </div>
 
           <div className="text-center sm:text-left">
