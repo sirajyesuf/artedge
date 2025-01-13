@@ -2,16 +2,11 @@ import React from "react";
 import {
   Droplets,
   Hammer,
-  Phone,
-  Mail,
   Footprints,
   HardHat,
   ShirtIcon,
   Brush,
-  Trash2,
   Sparkles,
-  Glasses,
-  HandMetal,
   Shield,
 } from "lucide-react";
 

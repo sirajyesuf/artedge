@@ -47,7 +47,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/clients"
+                  href="/#client_section"
                   className="text-gray-400 hover:text-blue-500 text-sm md:text-base"
                 >
                   Clients
@@ -55,10 +55,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/contactus"
                   className="text-gray-400 hover:text-blue-500 text-sm md:text-base"
                 >
-                  Contact
+                  ContactUs
                 </Link>
               </li>
             </ul>
@@ -69,17 +69,23 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2">
-              <li className="text-gray-400 text-sm md:text-base">
+              <Link
+                href="/services/security"
+                className="text-gray-400 text-sm md:text-base"
+              >
                 Security Services
-              </li>
-              <li className="text-gray-400 text-sm md:text-base">
+              </Link>
+              <Link
+                href="/services/cleaning"
+                className="text-gray-400 text-sm md:text-base"
+              >
                 Cleaning Solutions
+              </Link>
+              <li className="text-gray-400 text-sm md:text-base">
+                Provision of Security and Cleaning Supplies
               </li>
               <li className="text-gray-400 text-sm md:text-base">
-                Training Programs
-              </li>
-              <li className="text-gray-400 text-sm md:text-base">
-                Material Supply
+                Skill Development
               </li>
             </ul>
           </div>
@@ -91,11 +97,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base">
                 <Phone className="h-4 w-4 md:h-5 md:w-5 mr-2" />
-                +251 911 123 456
+                +251 911 389 703
               </li>
               <li className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base">
                 <Mail className="h-4 w-4 md:h-5 md:w-5 mr-2" />
-                info@artedgetrading.com
+                artedgetradingplc@gmail.com
               </li>
               <li className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base">
                 <MapPin className="h-4 w-4 md:h-5 md:w-5 mr-2" />
