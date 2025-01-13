@@ -4,18 +4,17 @@ import CTA from "@/components/cta";
 import Clients from "@/components/clients";
 import Services from "@/components/services";
 import Achievements from "@/components/achievements";
-import Testimonials
- from "@/components/testimonials";
+import Testimonials from "@/components/testimonials";
 export default function Home() {
   return (
     <div className="min-h-screen">
       <main>
         <Hero />
-        <WhyChooseUS />
         <Services />
+        <WhyChooseUS />
         <Achievements />
         <Clients />
-        <Testimonials/>
+        <Testimonials />
         <CTA />
       </main>
     </div>
