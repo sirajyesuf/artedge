@@ -266,13 +266,6 @@ export default function ContactUSForm() {
               Call Us Now
               <Phone className="ml-2 h-5 w-5" />
             </a>
-            <a
-              href="mailto:artedgetradingplc@gmail.com"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white rounded-md text-base font-medium hover:bg-white hover:text-blue-600 transition-colors"
-            >
-              Email Us
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
           </div>
         </div>
       </div>
