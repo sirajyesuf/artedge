@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Shield,
   SprayCanIcon as Spray,
@@ -12,28 +13,32 @@ const services = [
     description:
       "Professional armed and unarmed security personnel, mobile patrols, event security, and advanced surveillance solutions.",
     icon: Shield,
-    href: "/services/security",
+    image: "/services/security.jpg",
+    detailHref: "/services/security",
   },
   {
     title: "Cleaning Services",
     description:
       "Comprehensive cleaning solutions for offices, residences, industries, and post-construction projects.",
     icon: Spray,
-    href: "/services/cleaning",
+    image: "/services/cleaning.jpg",
+    detailHref: "/services/cleaning",
   },
   {
     title: "Provision of Security and Cleaning Supplies",
     description:
       "Providing high-quality security uniforms, cleaning supplies, tools, and personal protective equipment to ensure safety and efficiency",
     icon: Package,
-    href: "/services/supplies",
+    image: "/services/supplies.jpg",
+    detailHref: "/services/supplies",
   },
   {
     title: "Skill Development",
     description:
       "Skill-enhancing programs for security staff, cleaning personnel, and customer service teams.",
     icon: GraduationCap,
-    href: "/services/training",
+    image: "/services/skill.jpg",
+    detailHref: "/services/skill",
   },
 ];
 
@@ -48,14 +53,27 @@ export default function Services() {
           Reliable solutions tailored to meet your needs in security,
           cleanliness, and professional development.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-lg shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg flex flex-col h-full"
             >
-              <div className="flex justify-center mb-4">
-                <service.icon className="w-12 h-12 text-blue-500" />
+              <div className="mb-4 relative w-full h-auto">
+                {service.image ? (
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    className="rounded-lg"
+                    width={600}
+                    height={400}
+                    layout="responsive"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200 rounded-lg">
+                    <service.icon className="w-16 h-16 text-blue-500" />
+                  </div>
+                )}
               </div>
               <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
                 {service.title}
@@ -65,8 +83,9 @@ export default function Services() {
               </p>
               <div className="mt-auto pt-4 self-center">
                 <Link
-                  href={service.href}
+                  href={service.detailHref}
                   className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 ease-in-out"
+                  aria-label={`Learn more about ${service.title}`}
                 >
                   Learn More
                 </Link>
