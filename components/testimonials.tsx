@@ -1,6 +1,6 @@
 "use client";
 
-import { Compass, Quote, Star } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/carousel";
 
 import React from "react";
-import { text } from "stream/consumers";
 
 const testimonials = [
   {
