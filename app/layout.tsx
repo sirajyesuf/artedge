@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Artech Edge Security and Cleaning Services is a leading provider of security and cleaning services in Ethiopia.",
   keywords:
-    "security, cleaning, janitorial, professional development,guarding, surveillance, cleaning supplies, training, security uniforms, PPE",
+    "security, cleaning, janitorial, professional development, guarding, surveillance, cleaning supplies, training, security uniforms, PPE, facility management, Ethiopia services",
   authors: [{ name: "Artech Edge" }],
   openGraph: {
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Artech Edge Security and Cleaning Services",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        url: "https://artedge.vercel.app/services/security_service.jpg",
         width: 1200,
         height: 630,
         alt: "Artech Edge Security and Cleaning Services",
@@ -41,8 +41,9 @@ export const metadata: Metadata = {
     title: "Artech Edge Security and Cleaning Services",
     description:
       "Artech Edge Security and Cleaning Services is a leading provider of security and cleaning services in Ethiopia.",
-    images: ["https://images.unsplash.com/photo-1498050108023-c5249f4df085"],
+    images: ["https://artedge.vercel.app/services/security_service.jpg"],
   },
+  themeColor: "#0863b2",
 };
 
 export default function RootLayout({
