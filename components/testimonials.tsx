@@ -1,6 +1,6 @@
 "use client";
 
-import { Quote, Star } from "lucide-react";
+import { Compass, Quote, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 
 import React from "react";
+import { text } from "stream/consumers";
 
 const testimonials = [
   {
@@ -32,6 +33,27 @@ const testimonials = [
   {
     company: "chilallo enterprise",
     text: "Reliable, professional, and always attentive—Art Edge Trading sets the standard for security services.",
+    rating: 5,
+  },
+  {
+    company: "kolfe keranio sub city public property administration office",
+    text: "Art Edge Trading proudly supported the government’s program, helping provide food to those in need with dedication and care.",
+    rating: 5,
+  },
+  {
+    company: "st.paul's hospital millennium medical college",
+    text: "Art Edge Trading has been a trusted partner in maintaining the cleanliness of our college facilities and buildings, delivering exceptional cleaning services with reliability and professionalism.",
+    rating: 5,
+  },
+  {
+    company:
+      "cggc operation and maintenance project department of kality waste water treatment  plant in ethiopia",
+    text: "Art Edge Trading has been a reliable partner in providing security services, ensuring the safety and security of our plant properties and staff members by deployinh highly trained security guards.",
+    rating: 5,
+  },
+  {
+    company: "seventh-day adventist church",
+    text: "Art Edge Trading has been a trusted partner in delivering reliable and professional security services.",
     rating: 5,
   },
 ];
