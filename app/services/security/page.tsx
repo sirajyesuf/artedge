@@ -69,24 +69,24 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        <div className="relative bg-blue-900 min-h-screen w-full overflow-hidden">
-          <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-white px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-montserrat">
-                Your Trusted Partner in Security Solutions
-              </h1>
-              <p className="text-xl sm:text-2xl mb-6 font-roboto">
-                Reliable, professional, and comprehensive security services
-                tailored to safeguard your people and assets.
-              </p>
-              <div className="flex items-center justify-center mb-8">
-                <ShieldCheck className="w-6 h-6 mr-2 text-yellow-400" />
-                <p className="text-lg sm:text-xl font-roboto">
-                  Serving businesses, events, and communities with unmatched
-                  expertise.
-                </p>
-              </div>
-            </div>
+
+        <div
+          className="relative h-[600px] flex items-center justify-center"
+          style={{
+            backgroundImage: 'url("/services/security.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-blue-900/70"></div>
+          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Your Trusted Partner in Security Solutions
+            </h1>
+            <p className="text-xl text-gray-100 mb-8">
+              Serving businesses, events, and communities with unmatched
+              expertise.
+            </p>
           </div>
         </div>
 
