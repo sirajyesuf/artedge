@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactUSForm() {
   const [formData, setFormData] = useState({
@@ -57,18 +58,20 @@ export default function ContactUSForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div
-        className="relative  h-[500px] md:h-[800px] bg-cover bg-center"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920")',
-        }}
-      >
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div className="relative h-[400px] md:h-[800px] rounded-lg overflow-hidden">
+        <Image
+          src="/contactus.jpg"
+          alt="Contact Us"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
+          priority
+        />
+        <div className="absolute inset-0 flex place-items-end md:items-center bg-gradient-to-r from-blue-600 to-transparent">
+          <div className="md:items-center p-4 text-white px-4">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
               Get in Touch with Us
             </h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
