@@ -15,6 +15,7 @@ export default function Footer() {
                   width={160}
                   height={200}
                   className="max-h-full max-w-full object-contain"
+                  priority
                 />
               </Link>
             </div>
@@ -81,12 +82,15 @@ export default function Footer() {
               >
                 Cleaning Solutions
               </Link>
-              <Link href="/" className="text-gray-400 text-sm md:text-base">
+              <Link
+                href="/services/supplies"
+                className="text-gray-400 text-sm md:text-base"
+              >
                 Provision of Security and Cleaning Supplies
               </Link>
-              <Link  href="/" className="text-gray-400 text-sm md:text-base">
+              <Link href="/" className="text-gray-400 text-sm md:text-base">
                 Skill Development
-              </Link> 
+              </Link>
             </div>
           </div>
 

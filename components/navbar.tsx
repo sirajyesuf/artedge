@@ -16,7 +16,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#28316f] shadow-none fixed w-full z-50 bg-[#214186]">
+    <nav className="shadow-none fixed w-full z-50 bg-[#214186]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 p-2 items-center">
           <div className="">
@@ -27,6 +27,7 @@ export function Navbar() {
                 width={160}
                 height={200}
                 className="max-h-full max-w-full object-contain"
+                priority
               />
             </Link>
           </div>
@@ -37,7 +38,7 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className=" text-white hover:text-[#ADD8E6] px-3 py-2 rounded-md text-lg font-extrabold transition-colors"
+                className=" text-white hover:text-[#49bbe1] px-3 py-2 rounded-md text-lg font-extrabold transition-colors"
               >
                 {item.name}
               </Link>
@@ -72,7 +73,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-white hover:text-[#ADD8E6] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:text-[#2d8cab] block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
