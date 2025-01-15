@@ -1,95 +1,108 @@
 import React from "react";
-import {
-  Droplets,
-  Hammer,
-  Footprints,
-  HardHat,
-  ShirtIcon,
-  Brush,
-  Sparkles,
-  Shield,
-} from "lucide-react";
-
-function Product({
-  icon: Icon,
-  title,
-}: {
-  icon: React.ElementType;
-  title: string;
-}) {
-  return (
-    <div className="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition-shadow flex flex-col items-center">
-      <Icon className="w-12 h-12 text-blue-600 mb-4 flex justify-center" />
-      <h3 className="text-xl font-semibold">{title}</h3>
-    </div>
-  );
-}
+import Image from "next/image";
+import Link from "next/link";
 
 const securitySupplies = [
   {
-    icon: Footprints,
     title: "Safety Boots",
+    image: "/services/supplies/safetyboots.png",
   },
   {
-    icon: HardHat,
     title: "Protective Helmets",
+    image: "/services/supplies/protectivehelmet.png",
   },
   {
-    icon: ShirtIcon,
     title: "Security Uniforms",
+    image: "/services/supplies/securityuniform.png",
   },
   {
-    icon: Shield,
     title: "Body Armor",
+    image: "/services/supplies/bodyarmor.png",
   },
 ];
 
 const cleaningChemicals = [
   {
-    icon: Droplets,
     title: "Disinfectants",
+    image: "/services/supplies/disinfectant.png",
   },
-  { icon: Shield, title: "Sanitizers" },
   {
-    icon: Sparkles,
+    title: "Sanitizers",
+    image: "/services/supplies/sanitizers.png",
+  },
+  {
     title: "Cleaning Wipes",
+    image: "/services/supplies/cleaningwipes.png",
   },
   {
-    icon: Droplets,
     title: "Specialized Cleaning Agents",
+    image: "/services/supplies/specializedcleaningagent.png",
   },
 ];
 
 const cleaningEquipment = [
   {
-    icon: Sparkles,
     title: "Microfiber Cloths",
+    image: "/services/supplies/microfibercloths.png",
   },
-  { icon: Hammer, title: "Scrubbers" },
   {
-    icon: Brush,
-    title: "Abrasive Products",
+    title: "Scrubbers",
+    image: "/services/supplies/scrubbers.png",
   },
-  { icon: Hammer, title: "Squeegees" },
-  { icon: Shield, title: "Cleaning Sprays" },
-  { icon: Sparkles, title: "Sponges" },
+  {
+    title: "Squeegees",
+    image: "/services/supplies/squeegees.png",
+  },
+  {
+    title: "Cleaning Sprays",
+    image: "/services/supplies/cleaningsprays.png",
+  },
+  {
+    title: "Sponges",
+    image: "/services/supplies/sponges.png",
+  },
 ];
 
-function App() {
+function Product({ title, image }: { title: string; image: string }) {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-blue-50 to-white py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-6">
-            Provision of Cleaning Supplies
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            High-quality security, protection, and cleaning services through
-            reliable suppliers of essential equipment and tools.
-          </p>
+    <div className="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition-shadow flex flex-col items-center justify-between gap-4">
+      <div className="w-auto h-auto bg-white p-2">
+        <Image
+          src={image}
+          alt={`image.split("/").pop().split(".")[0]`}
+          width={600}
+          height={400}
+          objectFit="fill"
+        />
+      </div>
+
+      <h3 className="text-xl font-semibold">{title}</h3>
+    </div>
+  );
+}
+
+export default function Supplies() {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="relative h-[80vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center bg-cover">
+        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
+        <div className="container mx-auto px-6 relative">
+          <div className="max-w-2xl">
+            <h1 className=" text-3xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight pt-8">
+              Comprehensive Security & Cleaning Supplies for Every Need.
+            </h1>
+            <p className="text-md md:text-xl text-blue-800 mb-6 leading-relaxed">
+              At Art Edge, we provide top-tier security and cleaning supplies
+              designed to keep your spaces safe and pristine. Whether for
+              offices, commercial centers, or residential areas, our
+              high-quality security equipment and cleaning tools ensure a
+              secure, hygienic environment. With reliable brands, modern
+              protective gear, and eco-friendly cleaning products, we meet your
+              needs with efficiency and expertise.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Security Supplies Section */}
       <section className="py-20 bg-white">
@@ -97,7 +110,7 @@ function App() {
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
             Security Supplies
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {securitySupplies.map((item, index) => (
               <Product key={index} {...item} />
             ))}
@@ -117,7 +130,7 @@ function App() {
             <h3 className="text-2xl font-bold text-gray-800 mb-8">
               Cleaning Chemicals
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {cleaningChemicals.map((item, index) => (
                 <Product key={index} {...item} />
               ))}
@@ -129,32 +142,28 @@ function App() {
             <h3 className="text-2xl font-bold text-gray-800 mb-8">
               Cleaning Equipment and Tools
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {cleaningEquipment.map((item, index) => (
-                <Product key={index} {...item} />
-              ))}
-            </div>
-          </div>
-
-          {/* PPE Section */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-8">
-              Personal Protective Equipment
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {cleaningEquipment.map((item, index) => (
-                // <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                //   <div className="text-blue-600 mb-3">{item.icon}</div>
-                //   <h4 className="font-semibold">{item.title}</h4>
-                // </div>
                 <Product key={index} {...item} />
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-blue-600">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-8">
+            Ready to Get Your Supplies?
+          </h2>
+          <div className="flex items-center justify-center">
+            <button className="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors">
+              <Link href="/contactus">Contact Us</Link>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
-
-export default App;
