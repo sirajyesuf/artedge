@@ -88,7 +88,10 @@ export default function Footer() {
               >
                 Provision of Security and Cleaning Supplies
               </Link>
-              <Link href="/" className="text-gray-400 text-sm md:text-base">
+              <Link
+                href="/services/skill"
+                className="text-gray-400 text-sm md:text-base"
+              >
                 Skill Development
               </Link>
             </div>

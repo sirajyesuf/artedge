@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artedge.vercel.app/"),
+  metadataBase: new URL("https://artedgesecurityandcleaning.com"),
   title: "Artech Edge Security and Cleaning Services",
   description:
     "Artech Edge Security and Cleaning Services is a leading provider of security and cleaning services in Ethiopia.",
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://artedge.vercel.app/",
+    url: "https://artedgesecurityandcleaning.com",
     siteName: "Artech Edge Security and Cleaning Services",
     images: [
       {
-        url: "https://artedge.vercel.app/services/security_service.jpg",
+        url: "https://artedgesecurityandcleaning.com/artedgelogo.jpg",
         width: 1200,
         height: 630,
         alt: "Artech Edge Security and Cleaning Services",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Artech Edge Security and Cleaning Services",
     description:
       "Artech Edge Security and Cleaning Services is a leading provider of security and cleaning services in Ethiopia.",
-    images: ["https://artedge.vercel.app/services/security_service.jpg"],
+    images: ["https://artedgesecurityandcleaning.com/artedgelogo.jpg"],
   },
   themeColor: "#0863b2",
 };

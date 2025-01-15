@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone, Mail, MapPin, Send, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 export default function ContactUSForm() {
   const [formData, setFormData] = useState({
@@ -60,7 +60,7 @@ export default function ContactUSForm() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div
-        className="relative h-[400px] bg-cover bg-center"
+        className="relative  h-[500px] md:h-[800px] bg-cover bg-center"
         style={{
           backgroundImage:
             'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920")',
