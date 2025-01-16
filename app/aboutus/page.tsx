@@ -70,7 +70,7 @@ export default function AboutUs() {
     <div className="min-h-screen">
       <section className="relative h-[60vh]">
         <Image
-          src="/aboutus_hero.jpg"
+          src="/aboutus.png"
           alt="Space nebula"
           fill
           priority
