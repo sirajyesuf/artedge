@@ -74,7 +74,7 @@ export default function Cleaning() {
       <div
         className="relative h-[70vh] bg-cover bg-center"
         style={{
-          backgroundImage: `url('/services/cleaning_hero.jpg')`,
+          backgroundImage: `url('/services/cleaning_hero.jpeg')`,
         }}
       >
         {/* Gradient Overlay */}

@@ -8,6 +8,8 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+
 function ServiceFeature({
   icon: Icon,
   title,
@@ -69,8 +71,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-
-        <div
+        {/* <div
           className="relative h-[600px] flex items-center justify-center"
           style={{
             backgroundImage: 'url("/services/security.jpg")',
@@ -87,6 +88,29 @@ function App() {
               Serving businesses, events, and communities with unmatched
               expertise.
             </p>
+          </div>
+        </div> */}
+
+        <div className="relative w-full h-[400px] md:h-[650px] rounded-lg">
+          <Image
+            src="/services/security_hero3.jpg"
+            alt="security services"
+            className="rounded-lg flex self-end"
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+          <div className="absolute inset-0 flex place-items-end md:items-center bg-gradient-to-r from-blue-700 to-transparent">
+            <div className="md:items-center p-4 text-white px-4">
+              <h1 className="text-2xl md:text-5xl font-bold mb-4">
+                Your Trusted Partner in Security Solutions
+              </h1>
+              <p className="text-xl md:text-2xl max-w-2xl mx-auto">
+                Serving businesses, events, and communities with unmatched
+                expertise.
+              </p>
+            </div>
           </div>
         </div>
 
