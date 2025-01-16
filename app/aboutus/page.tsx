@@ -14,7 +14,6 @@ import {
 
 import Staff from "@/components/staff";
 import ImageGallery from "@/components/gallery";
-import Image from "next/image";
 
 export default function AboutUs() {
   const ourcorevalues = [
@@ -68,25 +67,21 @@ export default function AboutUs() {
   ];
   return (
     <div className="min-h-screen">
-      <section className="relative h-[60vh]">
-        <Image
-          src="/aboutus.png"
-          alt="Space nebula"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-blue-900/60">
-          <div className="container mx-auto px-4 h-full flex flex-col justify-center">
-            <h1 className="text-5xl font-bold text-white mb-4">About Us</h1>
-            <p className="text-xl text-blue-100 max-w-2xl">
+
+      <div className="h-[40vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center bg-cover">
+        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
+        <div className="container mx-auto px-6 relative">
+          <div className="max-w-2xl">
+            <h1 className=" text-3xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight pt-8 capitalize">
+              about artedge trading plc
+            </h1>
+            <p className="text-md md:text-xl text-blue-800 mb-6 leading-relaxed">
               Delivering excellence in security, cleaning, and professional
               development services.
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Mission & Vision Section */}
       <section className="py-16 bg-gray-50">
@@ -147,15 +142,25 @@ export default function AboutUs() {
       </section>
 
       {/* What Sets Us Apart Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            What Sets Us Apart?
-          </h2>
+      <section className="py-16  text-white bg-gray-50">
+        <div className="container mx-auto px-4 flex gap-4 flex-col">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
+              What Makes Us Unique
+            </h2>
+            <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Our unwavering commitment to excellence and innovation sets us
+              apart from the rest.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whatsetsusapart.map((feature, index) => (
-              <div key={index} className="p-6 bg-blue-800 rounded-lg">
-                <feature.icon className="w-10 h-10 text-blue-300 mb-4" />
+              <div
+                key={index}
+                className="p-6 bg-[#2563eb] rounded-sm shadow-none"
+              >
+                <feature.icon className="w-10 h-10 text-white mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-blue-100">{feature.description}</p>
               </div>

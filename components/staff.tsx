@@ -1,98 +1,113 @@
 "use client";
-
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Shield, Handshake } from "lucide-react";
 
 interface TeamMember {
   name: string;
   position: string;
-  photo: string;
+  image: string;
 }
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Yared Beyene",
-    position: "deputy general Manager",
-    photo: "/staff/tagel_minwuyelet.jpg",
+    name: "yared beyene",
+    position: "general manager",
+    image: "/staff/yared_beyene.jpg",
   },
   {
-    name: "yared Beyene",
-    position: "General Manager",
-    photo: "/staff/yared_beyene.jpg",
+    name: "tagel minwuyelet",
+    position: "deputy general Manager",
+    image: "/staff/tagel_minwuyelet.jpg",
   },
   {
     name: "girmay teklu",
     position: "finance manager",
-    photo: "/staff/girmay_teklu.jpg",
+    image: "/staff/girmay_teklu.jpg",
   },
   {
     name: "shiferaw ejigu ",
     position: "human resource manager",
-    photo: "/staff/shiferaw_ejigu.jpg",
+    image: "/staff/shiferaw_ejigu.jpg",
   },
   {
     name: "danayit amsalu",
     position: "administration and finance",
-    photo: "/staff/danayit_amsalu.jpg",
+    image: "/staff/danayit_amsalu.jpg",
   },
 ];
 
 export default function Staff() {
+  const topMembers = teamMembers.slice(0, 2);
+  const bottomMembers = teamMembers.slice(2);
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl font-bold text-blue-600 mb-4">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
             Meet Our Team
           </h2>
-          <p className="text-xl text-gray-600">
-            The skilled professionals driving excellence in security, cleaning,
-            and service delivery.
+          <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            The innovative minds behind our success
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-auto">
-          {teamMembers.map((member, index) => (
-            <motion.div
+        {/* Top row - 2 members centered */}
+        <div className="flex flex-col md:flex-row justify-center gap-6 mt-12 max-w-5xl mx-auto">
+          {topMembers.map((member, index) => (
+            <Card
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-sm overflow-hidden"
+              className="overflow-hidden rounded-xl border-0 shadow-lg transition-shadow duration-300 w-full md:max-w-[300px]"
             >
-              <div className="relative  p-2 h-96 flex items-center justify-center">
-                <div className="w-90 h-90 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative aspect-square">
                   <Image
-                    src={member.photo}
+                    src={member.image || "/placeholder.svg"}
                     alt={member.name}
-                    width={300}
-                    height={300}
-                    className="object-cover w-full h-full"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2 capitalize">
-                  {member.name}
-                </h3>
-                <p className="text-gray-600 capitalize">{member.position}</p>
-              </div>
-            </motion.div>
+                <div className="bg-blue-600 p-4 text-white">
+                  <h3 className="font-bold text-lg capitalize">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-blue-100 capitalize">
+                    {member.position}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
-      </div>
 
-      <div className="absolute top-0 left-0 -z-10 opacity-5">
-        <Shield size={200} />
-      </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-5">
-        <Handshake size={200} />
+        {/* Bottom row - 3 members */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-5xl mx-auto">
+          {bottomMembers.map((member, index) => (
+            <Card
+              key={index}
+              className="overflow-hidden rounded-xl border-0 shadow-lg transition-shadow duration-300"
+            >
+              <CardContent className="p-0">
+                <div className="relative aspect-square">
+                  <Image
+                    src={member.image || "/placeholder.svg"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="bg-blue-600 p-4 text-white">
+                  <h3 className="font-bold text-lg capitalize">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-blue-100 capitalize">
+                    {member.position}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
