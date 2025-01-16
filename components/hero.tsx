@@ -1,39 +1,36 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="pt-20 md:pt-48 pb-8 md:pb-12 px-4 sm:px-6 lg:px-8 ] bg-[#f2f3f2] md:min-h-[80vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white rounded-3xl">
-      <div className="max-w-7xl mx-auto text-[#214186]">
-        <div className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6 pt-4">
-            Your Trusted Partner for Security, Cleaning, and Excellence
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-[#214186] mb-6 md:mb-8 max-w-3xl mx-auto px-4">
-            Reliable services tailored to ensure safety, hygiene, and
-            operational success
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
-            <Button
-              asChild
-              size="lg"
-              className="w-full sm:w-auto bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600"
+    <div
+      className="relative h-[70vh] bg-cover bg-center"
+      style={{
+        backgroundImage: `url('hero.png')`,
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-500/80 to-blue-900/90"></div>
+
+      <div className="relative max-w-full mx-auto h-full">
+        <div className="flex  items-center h-full px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl relative z-10">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+              Your Trusted Partner for Security, Cleaning, and Excellence
+            </h1>
+            <p className="mt-4 text-xl text-blue-100 mb-8">
+              Reliable services tailored to ensure safety, hygiene, and
+              operational success
+            </p>
+            <Link
+              href="/#service_section"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition-colors"
             >
-              <Link href="/#service_section">Explore Services</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto  text-blue-500 font-bold"
-            >
-              <Link href="/contactus">Contact Us</Link>
-            </Button>
+              Explore Our Services
+            </Link>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
