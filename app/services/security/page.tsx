@@ -71,45 +71,48 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        {/* <div
-          className="relative h-[600px] flex items-center justify-center"
-          style={{
-            backgroundImage: 'url("/services/security.jpg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute inset-0 bg-blue-900/70"></div>
-          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Your Trusted Partner in Security Solutions
-            </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Serving businesses, events, and communities with unmatched
-              expertise.
-            </p>
+        <div className="relative h-[50vh] md:h-[60vh]">
+          {/* Background Image */}
+          <div className="absolute inset-0 rounded-b-lg">
+            <div className="block md:hidden">
+              <Image
+                src="/services/security_guard_banner.png"
+                alt="Hero Background"
+                layout="fill"
+                objectFit="contain"
+                objectPosition="top"
+                priority
+              />
+            </div>
+            <div className="hidden md:block">
+              <Image
+                src="/services/security_guard_banner.png"
+                alt="Hero Background"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                priority
+              />
+            </div>
           </div>
-        </div> */}
 
-        <div className="relative w-full h-[400px] md:h-[650px] rounded-lg">
-          <Image
-            src="/services/security_hero3.jpg"
-            alt="security services"
-            className="rounded-lg flex self-end"
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
-          <div className="absolute inset-0 flex place-items-end md:items-center bg-gradient-to-r from-blue-700 to-transparent">
-            <div className="md:items-center p-4 text-white px-4">
-              <h1 className="text-2xl md:text-5xl font-bold mb-4">
-                Your Trusted Partner in Security Solutions
-              </h1>
-              <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-                Serving businesses, events, and communities with unmatched
-                expertise.
-              </p>
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-600/50 via-blue-500/80 to-blue-500/90 md:bg-gradient-to-r md:from-blue-600/80 md:via-blue-500/80"></div>
+
+          {/* Content */}
+          <div className="relative max-w-full mx-auto h-full">
+            <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
+              <div className="max-w-2xl relative z-10">
+                <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+                  Professional Cleaning Solutions for Every Space
+                </h1>
+                <p className="mt-4 text-xl text-blue-100 mb-8">
+                  At Art Edge, we deliver exceptional cleaning services tailored
+                  to your needs. From offices to homes, our expert team ensures
+                  spotless, healthy environments using eco-friendly solutions
+                  and advanced cleaning techniques.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -130,14 +133,16 @@ function App() {
 
         {/* CTA Section */}
         <section className="py-16 bg-blue-600">
-          <div className="container mx-auto px-4 text-center">
+          <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold text-white mb-8">
               Ready to Enhance Your Security?
             </h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors">
-                <Link href="/contactus">Contact Us</Link>
-              </button>
+            <div>
+              <Link href={"/contactus"}>
+                <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                  Contact Us Today
+                </button>
+              </Link>
             </div>
           </div>
         </section>
