@@ -60,7 +60,7 @@ export default function ContactUSForm() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative h-[400px] md:h-[800px] rounded-lg overflow-hidden">
+      <div className="relative h-[400px] md:h-[800px] rounded-b-lg overflow-hidden">
         <Image
           src="/contactus.jpg"
           alt="Contact Us"
