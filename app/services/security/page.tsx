@@ -104,13 +104,11 @@ function App() {
             <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
               <div className="max-w-2xl relative z-10">
                 <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-                  Professional Cleaning Solutions for Every Space
+                  Your Trusted Partner in Security Solutions
                 </h1>
                 <p className="mt-4 text-xl text-blue-100 mb-8">
-                  At Art Edge, we deliver exceptional cleaning services tailored
-                  to your needs. From offices to homes, our expert team ensures
-                  spotless, healthy environments using eco-friendly solutions
-                  and advanced cleaning techniques.
+                  Serving businesses, events, and communities with unmatched
+                  expertise.
                 </p>
               </div>
             </div>
