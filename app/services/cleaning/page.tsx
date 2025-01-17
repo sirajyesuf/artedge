@@ -11,7 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
 const services = [
   {
     icon: <Building2 className="w-6 h-6 text-blue-600" />,
@@ -71,81 +71,51 @@ const features = [
 export default function Cleaning() {
   return (
     <div className="min-h-screen bg-white">
-      <div
-        className="relative h-[70vh] bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/services/cleaning_hero.jpeg')`,
-        }}
-      >
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 via-blue-500/10 to-blue-400/10"></div>
+      <div className="relative h-[50vh] md:h-[60vh]">
+        {/* Background Image */}
+        <div className="absolute inset-0 rounded-b-lg">
+          <div className="block md:hidden">
+            <Image
+              src="/services/cleaning_hero.png"
+              alt="Hero Background"
+              layout="fill"
+              objectFit="contain"
+              objectPosition="top"
+              priority
+            />
+          </div>
+          <div className="hidden md:block">
+            <Image
+              src="/services/cleaning_hero.png"
+              alt="Hero Background"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              priority
+            />
+          </div>
+        </div>
 
-        <div className="relative max-w-7xl mx-auto h-full">
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/50 via-blue-500/80 to-blue-500/90 md:bg-gradient-to-r md:from-blue-600/80 md:via-blue-500/80"></div>
+
+        {/* Content */}
+        <div className="relative max-w-full mx-auto h-full">
           <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl relative z-10">
-              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
                 Professional Cleaning Solutions for Every Space
               </h1>
-              <p className="mt-4 text-xl text-white mb-8">
+              <p className="mt-4 text-xl text-blue-100 mb-8">
                 At Art Edge, we deliver exceptional cleaning services tailored
                 to your needs. From offices to homes, our expert team ensures
                 spotless, healthy environments using eco-friendly solutions and
-                advanced cleaning techniques.{" "}
+                advanced cleaning techniques.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div className="relative w-full h-[80vh] flex items-center justify-center">
-        <Image
-          src="/services/cle.jpg" 
-          alt="Hero Background"
-          layout="fill"
-          objectFit="fill"
-          quality={100}
-          priority
-          className="z-0"
-        />
-
-        <div className="bg-gradient-to-br from-blue-500 via-blue-400 to-white"></div>
-
-        <div className="container mx-auto px-6 relative">
-          <div className="max-w-2xl">
-            <h1 className=" text-4xl md:text-5xl font-bold text-white mb-0 leading-tight">
-              Professional Cleaning Solutions for Every Space
-            </h1>
-            <p className="text-md md:text-xl text-white mb-6 leading-relaxed">
-              At Art Edge, we deliver exceptional cleaning services tailored to
-              your needs. From offices to homes, our expert team ensures
-              spotless, healthy environments using eco-friendly solutions and
-              advanced cleaning techniques.
-            </p>
-          </div>
-        </div>
-      </div> */}
-      {/* <section className="relative h-[80vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center border-2 border-red-800 p-2">
-        <Image
-          src="/services/cleaning.jpg"
-          alt="Space nebula"
-          fill
-          priority
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
-        <div className="container mx-auto px-6 relative">
-          <div className="max-w-2xl">
-            <h1 className=" text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">
-              Professional Cleaning Solutions for Every Space
-            </h1>
-            <p className="text-md md:text-xl text-blue-800 mb-6 leading-relaxed">
-              At Art Edge, we deliver exceptional cleaning services tailored to
-              your needs. From offices to homes, our expert team ensures
-              spotless, healthy environments using eco-friendly solutions and
-              advanced cleaning techniques.
-            </p>
-          </div>
-        </div>
-      </section> */}
 
       {/* Service Overview */}
       <section className="py-16 bg-gray-50">
