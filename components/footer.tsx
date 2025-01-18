@@ -110,10 +110,17 @@ export default function Footer() {
                 <Mail className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                 artedgetradingplc@gmail.com
               </li>
-              <li className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base">
-                <MapPin className="h-4 w-4 md:h-5 md:w-5 mr-2" />
+              <Link
+                href="https://maps.app.goo.gl/8aNq36c7rqN76RV86"
+                className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base"
+                target="_blank"
+              >
+                <MapPin
+                  className="h-4 w-4 md:h-5 md:w-5 mr-2"
+                  color="#3569d7"
+                />
                 Addis Ababa, Ethiopia
-              </li>
+              </Link>
             </ul>
           </div>
         </div>
