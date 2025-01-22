@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.artedgesecurityandcleaning.com
+
+# Sitemaps
+Sitemap: https://www.artedgesecurityandcleaning.com/sitemap.xml
