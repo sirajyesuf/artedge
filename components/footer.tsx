@@ -110,6 +110,10 @@ export default function Footer() {
                 <Mail className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                 artedgetradingplc@gmail.com
               </li>
+              <li className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base">
+                <Mail className="h-4 w-4 md:h-5 md:w-5 mr-2" />
+                tagelmin@gmail.com
+              </li>
               <Link
                 href="https://maps.app.goo.gl/8aNq36c7rqN76RV86"
                 className="flex items-center justify-center sm:justify-start text-gray-400 text-sm md:text-base"

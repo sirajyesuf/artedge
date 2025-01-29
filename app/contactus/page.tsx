@@ -212,12 +212,21 @@ export default function ContactUSForm() {
                 <Mail className="h-6 w-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                  <a
-                    href="mailto:artedgetradingplc@gmail.com"
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    artedgetradingplc@gmail.com
-                  </a>
+                  <div className="flex flex-col">
+                    <a
+                      href="mailto:artedgetradingplc@gmail.com"
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      artedgetradingplc@gmail.com
+                    </a>
+
+                    <a
+                      href="mailto:artedgetradingplc@gmail.com"
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      tagelmin@gmail.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
