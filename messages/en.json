@@ -77,5 +77,44 @@
       "title": "contact info",
       "address": "Addis Ababa, Ethiopia"
     }
+  },
+  "AboutUS": {
+    "title": "about artedge trading plc",
+    "description": "Delivering excellence in security, cleaning, and professional development services.",
+    "our_mission": "our mission",
+    "mission": "Ensuring the safety of our customers by providing reliable security guards,janitors and cleaning supplies,as well as cleaning services that contribute to health and hygiene ,we will have 10000 employees by 2030.",
+    "our_vission": "our vission",
+    "vission": "Delivering efficient and professional janitorial, cleaning, and security services while prioritizing customer satisfaction. We focus on innovation, customized solutions, and disciplined management to exceed expectations.",
+    "ourcorevalues": {
+      "title": "Our Core Values",
+      "experience": "experience",
+      "experience_description": "We operate with integrity,ensuring transparency and accountability in all our operations.",
+      "professionalism": "professionalism",
+      "professionalism_description": "our team adheres to high standards of service excellence and ethics",
+      "customer_satisfaction": "Customer Satisfaction",
+      "customer_satisfaction_description": "Ensuring customer satisfaction is our priority with a focus on customized solutions.",
+      "community_commitment": "Community Commitment",
+      "community_commitment_description": "we are committed to contributing to the safety and cleanliness of the communities we serve."
+    },
+    "whatmakesusunique": {
+      "title": "what makes us unique",
+      "description": "Our unwavering commitment to excellence and innovation sets us apart from the rest.",
+      "reliable_workforce": "reliable workforce",
+      "reliable_workforce_description": "Highly trained and dedicated team members",
+      "comprehensive_solution": "Comprehensive Solutions",
+      "comprehensive_solution_description": "End-to-end security and cleaning services",
+      "innovation": "innovation",
+      "innovation_description": "Latest technology and modern approaches",
+      "track_record": "track record",
+      "track_record_description": "Consistently satisfied clients and partners"
+    },
+    "meetourteam": {
+      "title": "meet our team",
+      "description": "the innovative minds behind our success"
+    },
+    "ourvissioninframes": {
+      "title": "ourvission in frames",
+      "description": "Celebrating the creative visionaries shaping our journey."
+    }
   }
 }

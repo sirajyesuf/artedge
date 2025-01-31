@@ -14,70 +14,67 @@ import {
 
 import Staff from "@/components/staff";
 import ImageGallery from "@/components/gallery";
+import { useTranslations } from "next-intl";
 
 export default function AboutUs() {
+  const t = useTranslations("AboutUS");
+
   const ourcorevalues = [
     {
       icon: Briefcase,
-      title: "Experience",
-      description:
-        "We operate with integrity,ensuring transparency and accountability in all our operations.",
+      title: t("ourcorevalues.experience"),
+      description: t("ourcorevalues.experience_description"),
     },
     {
       icon: Award,
-      title: "Professionalism",
-      description:
-        "our team adheres to high standards of service excellence and ethics.",
+      title: t("ourcorevalues.professionalism"),
+      description: t("ourcorevalues.professionalism_description"),
     },
     {
       icon: Smile,
-      title: "Customer Satisfaction",
-      description:
-        "Ensuring customer satisfaction is our priority with a focus on customized solutions.",
+      title: t("ourcorevalues.customer_satisfaction"),
+      description: t("ourcorevalues.customer_satisfaction_description"),
     },
     {
       icon: Users,
-      title: "Community Commitment",
-      description:
-        "we are committed to contributing to the safety and cleanliness of the communities we serve.",
+      title: t("ourcorevalues.community_commitment"),
+      description: t("ourcorevalues.community_commitment_description"),
     },
   ];
 
-  const whatsetsusapart = [
+  const whatmakesusunique = [
     {
       icon: ShieldCheck,
-      title: "Reliable Workforce",
-      description: "Highly trained and dedicated team members",
+      title: t("whatmakesusunique.reliable_workforce"),
+      description: t("whatmakesusunique.reliable_workforce_description"),
     },
     {
       icon: Layers,
-      title: "Comprehensive Solutions",
-      description: "End-to-end security and cleaning services",
+      title: t("whatmakesusunique.comprehensive_solution"),
+      description: t("whatmakesusunique.comprehensive_solution_description"),
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
-      description: "Latest technology and modern approaches",
+      title: t("whatmakesusunique.innovation"),
+      description: t("whatmakesusunique.innovation_description"),
     },
     {
       icon: TrendingUp,
-      title: "Track Record",
-      description: "Consistently satisfied clients and partners",
+      title: t("whatmakesusunique.track_record"),
+      description: t("whatmakesusunique.track_record_description"),
     },
   ];
   return (
     <div className="min-h-screen">
-
       <div className="h-[40vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center bg-cover">
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-2xl">
             <h1 className=" text-3xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight pt-8 capitalize">
-              about artedge trading plc
+              {t("title")}
             </h1>
             <p className="text-md md:text-xl text-blue-800 mb-6 leading-relaxed">
-              Delivering excellence in security, cleaning, and professional
-              development services.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -91,28 +88,20 @@ export default function AboutUs() {
               <div className="flex items-center mb-6">
                 <Target className="w-8 h-8 text-blue-600 mr-3" />
                 <h2 className="text-2xl font-bold text-gray-800">
-                  Our Mission
+                  {t("our_mission")}
                 </h2>
               </div>
-              <p className="text-gray-600 mb-4 capitalize">
-                Ensuring the safety of our customers by providing reliable
-                security guards,janitors and cleaning supplies,as well as
-                cleaning services that contribute to health and hygiene ,we will
-                have 10000 employees by 2030.
-              </p>
+              <p className="text-gray-600 mb-4 capitalize">{t("mission")}</p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-none">
               <div className="flex items-center mb-6">
                 <Sparkles className="w-8 h-8 text-blue-600 mr-3" />
-                <h2 className="text-2xl font-bold text-gray-800">Our Vision</h2>
+                <h2 className="text-2xl font-bold text-gray-800">
+                  {t("our_vission")}
+                </h2>
               </div>
-              <p className="text-gray-600">
-                Delivering efficient and professional janitorial, cleaning, and
-                security services while prioritizing customer satisfaction. We
-                focus on innovation, customized solutions, and disciplined
-                management to exceed expectations.
-              </p>
+              <p className="text-gray-600">{t("vission")}</p>
             </div>
           </div>
         </div>
@@ -122,7 +111,7 @@ export default function AboutUs() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Our Core Values
+            {t("ourcorevalues.title")}
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {ourcorevalues.map((value, index) => (
@@ -146,16 +135,15 @@ export default function AboutUs() {
         <div className="container mx-auto px-4 flex gap-4 flex-col">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
-              What Makes Us Unique
+              {t("whatmakesusunique.title")}
             </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Our unwavering commitment to excellence and innovation sets us
-              apart from the rest.
+              {t("whatmakesusunique.description")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whatsetsusapart.map((feature, index) => (
+            {whatmakesusunique.map((feature, index) => (
               <div
                 key={index}
                 className="p-6 bg-[#2563eb] rounded-sm shadow-none"

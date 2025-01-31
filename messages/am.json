@@ -85,5 +85,43 @@
       "title": "የመገኛ መረጃ",
       "address": "አዲስ አበባ፣ ኢትዮጵያ"
     }
+  },
+  "AboutUS": {
+    "title": "ስለ አርቴድጅ ቴሬዲንግ ፒኤልሲ",
+    "description": "በደህንነት፣ ንጽህና እና ፕሮፌሽናል ልማት አገልግሎቶች ውስጥ የላቀ አገልግሎት ማቅረብ።",
+    "our_mission": "የእኛ ተልእኮ",
+    "mission": "አስተማማኝ የደህንነት ተጠባባቂዎች፣ አጽዳቂዎች እና የንጽህና እቃዎች እንዲሁም ለጤና እና ንጽህና የሚያስተዋውቁ የንጽህና አገልግሎቶችን በመስጠት ደንበኞቻችንን ደህንነት ማረጋገጥ። እስከ 2030 ዓ.ም. ድረስ 10,000 ሰራተኞች እንኖረናለን።",
+    "our_vission": "የእኛ ራእይ",
+    "vission": "ደንበኛ እርካታን በማስቀደስ ውጤታማ እና ብቃት ያለው የአጽዳቂ፣ የንጽህና እና የደህንነት አገልግሎቶችን ማቅረብ። ከሚጠበቀው በላይ ለመሆን ፈጠራ፣ ልዩ የተበጀ መፍትሄዎች እና የተገረመ አስተዳደር ላይ እናተኩራለን።",
+    "ourcorevalues": {
+      "experience": "ልምድ",
+      "experience_description": "በአግባባት እንሰራለን፣ በሁሉም ክወናችን ግልጽነት እና ተጠያቂነት እናረጋግጣለን።",
+      "professionalism": "ፕሮፌሽናሊዝም",
+      "professionalism_description": "ቡድናችን ከፍተኛ ደረጃ ያለው የአገልግሎት ልክንዮነት እና ስነምግባር ይከተላል።",
+      "customer_satisfaction": "ደንበኛ እርካታ",
+      "customer_satisfaction_description": "ደንበኛዎች እርካታ ቅድሚያችን ሲሆን ልዩ የተበጀ መፍትሄዎች ላይ እንተኩራለን።",
+      "community_commitment": "ማህበረሰብ ቁርጠኝነት",
+      "community_commitment_description": "ለምንሰራባቸው ማህበረሰቦች ደህንነት እና ንጽህና ለማረጋገጥ ቁርጠኞች ነን።"
+    },
+    "whatmakesusunique": {
+      "title": "ምን እንደሚያስተላልፈን",
+      "description": "ለልክንዮነት እና ፈጠራ ያለን የማይናወጥ ቁርጠኝነት ነው የሚያስተላልፈን።",
+      "reliable_workforce": "አስተማማኝ የሰራተኞች ቡድን",
+      "reliable_workforce_description": "በጥራት የተሰለፈ እና ቁርጠኛ የሆኑ የቡድን አባላት",
+      "comprehensive_solution": "ሙሉ የሆነ መፍትሄ",
+      "comprehensive_solution_description": "ከመጀመሪያ እስከ መጨረሻ የሚያሟላ የደህንነት እና የንጽህና አገልግሎቶች",
+      "innovation": "ፈጠራ",
+      "innovation_description": "የቅርብ ጊዜ ቴክኖሎጂ እና ዘመናዊ አቀራረቦች",
+      "track_record": "የተረጋገጠ ውጤት",
+      "track_record_description": "በተከታታይ የሚያሟሉ ደንበኞች እና አጋሮች"
+    },
+    "meetourteam": {
+      "title": "ቡድናችንን ይተዋወቁ",
+      "description": "የእኛን ስኬት የሚያስተዳድሩ ፈጣሪ አእምሮዎች"
+    },
+    "ourvissioninframes": {
+      "title": "በፎቶ ውስጥ የእኛ ራእይ",
+      "description": "የእኛን ጉዞ የሚያስተዳድሩ ፈጣሪ ራእዮችን እናከብራለን።"
+    }
   }
 }

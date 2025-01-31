@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const images = [
   {
@@ -28,14 +29,15 @@ const images = [
 ];
 
 export default function ImageGallery() {
+  const t = useTranslations("AboutUS")
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
-          Our Vision in Frames
+          {t("ourvissioninframes.title")}
         </h2>
         <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          Celebrating the creative visionaries shaping our journey.
+          {t("ourvissioninframes.description")}
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

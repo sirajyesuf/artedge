@@ -1,6 +1,7 @@
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface TeamMember {
   name: string;
@@ -39,15 +40,17 @@ const teamMembers: TeamMember[] = [
 export default function Staff() {
   const topMembers = teamMembers.slice(0, 2);
   const bottomMembers = teamMembers.slice(2);
+  const t = useTranslations("AboutUS");
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
-            Meet Our Team
+            {t("meetourteam.title")}
           </h2>
           <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            The innovative minds behind our success
+            {t("meetourteam.description")}
           </p>
         </div>
 
