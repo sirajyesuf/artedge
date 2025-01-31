@@ -1,48 +1,44 @@
 import { Users, Clock, Heart, Lightbulb, HandHeart } from "lucide-react";
-
-const reasons = [
-  {
-    icon: Users,
-    title: "Experience",
-    description:
-      "Our team of trained professionals have years of experience in their respective fields.",
-  },
-  {
-    icon: Clock,
-    title: "Reliability",
-    description:
-      "We are committed to providing consistent and reliable services.",
-  },
-  {
-    icon: Heart,
-    title: "Customer Focus",
-    description:
-      "We prioritize our customers' needs and strive to exceed their expectations.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description: "We use innovation to deliver the best solutions.",
-  },
-  {
-    icon: HandHeart,
-    title: "Community Involvement",
-    description:
-      "We show our involvement to the community through various initiatives.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function WhyChooseUs() {
+  const t = useTranslations("WhyChooseUS");
+  const reasons = [
+    {
+      icon: Users,
+      title: t("experience"),
+      description: t("experience_description"),
+    },
+    {
+      icon: Clock,
+      title: t("reliability"),
+      description: t("reliability_description"),
+    },
+    {
+      icon: Heart,
+      title: t("customerfocus"),
+      description: t("customerfocus_description"),
+    },
+    {
+      icon: Lightbulb,
+      title: t("innovation"),
+      description: t("innovation_description"),
+    },
+    {
+      icon: HandHeart,
+      title: t("community_involvement"),
+      description: t("community_involvement_description"),
+    },
+  ];
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Why Choose Us
+            {t("title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We deliver excellence through our commitment to quality,
-            reliability, and customer satisfaction
+            {t("description")}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">

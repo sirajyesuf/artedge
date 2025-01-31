@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import LanguageSwitcher from "./language-switcher";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="shadow-none fixed w-full z-50 bg-[#214186]">
+    <nav className="shadow-none relative w-full z-50 bg-[#214186]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 p-2 items-center">
           <div className="">
@@ -43,6 +44,8 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
+
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
@@ -79,6 +82,8 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
+
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>

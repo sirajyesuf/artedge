@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
-
+import { useTranslations } from "next-intl";
 const Hero = () => {
+  const t = useTranslations("Hero");
+
   return (
     <div
       className="relative h-[70vh] bg-cover bg-center"
@@ -15,17 +17,17 @@ const Hero = () => {
         <div className="flex  items-center h-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl relative z-10">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-              Your Trusted Partner for Security, Cleaning, and Excellence
+              {t("slogan")}
             </h1>
             <p className="mt-4 text-xl text-blue-100 mb-8">
-              Reliable services tailored to ensure safety, hygiene, and
-              operational success
+              {t("description")}
+              <br />
             </p>
             <Link
               href="/#service_section"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition-colors"
             >
-              Explore Our Services
+              {t("button")}
             </Link>
           </div>
         </div>

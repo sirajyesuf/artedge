@@ -1,35 +1,7 @@
 import React from "react";
 import { Users, Briefcase, Award, CheckCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const achievements = [
-  {
-    icon: Users,
-    number: "50+",
-    description: "Satisfied clients across Ethiopia.",
-    color: "text-blue-500",
-  },
-  {
-    icon: Briefcase,
-    number: "4+",
-    description:
-      "Years of delivering excellence in security and cleaning services.",
-    color: "text-blue-600",
-  },
-  {
-    icon: Award,
-    number: "1000+",
-    description:
-      "Skilled employees trained in security and janitorial services.",
-    color: "text-blue-700",
-  },
-  {
-    icon: CheckCircle,
-    number: "100+",
-    description:
-      "Projects successfully completed for businesses and communities.",
-    color: "text-blue-800",
-  },
-];
 type AchievementProps = {
   icon: React.ComponentType<{ size: number; strokeWidth: number }>;
   number: string;
@@ -56,16 +28,43 @@ function Achievement({
 }
 
 function Achievements() {
+  const t = useTranslations("OurAchievementsInNumbers");
+  const achievements = [
+    {
+      icon: Users,
+      number: "50+",
+      description: t("number_clients"),
+      color: "text-blue-500",
+    },
+    {
+      icon: Briefcase,
+      number: "4+",
+      description: t("years_excellence"),
+      color: "text-blue-600",
+    },
+    {
+      icon: Award,
+      number: "1000+",
+      description: t("skilled_employees"),
+      color: "text-blue-700",
+    },
+    {
+      icon: CheckCircle,
+      number: "100+",
+      description: t("successfull_projects"),
+      color: "text-blue-800",
+    },
+  ];
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-blue-900 mb-4">
-            Our Achievements in Numbers
+            {t("title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Measuring our success through our impact and dedication to
-            excellence.
+            {t("description")}
           </p>
         </div>
 
@@ -74,8 +73,6 @@ function Achievements() {
             <Achievement key={index} {...achievement} />
           ))}
         </div>
-
-
       </div>
     </section>
   );
