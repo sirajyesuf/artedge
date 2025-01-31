@@ -1,0 +1,81 @@
+{
+  "NavBar": {
+    "home": "home",
+    "services": "services",
+    "aboutus": "aboutus",
+    "contactus": "contactus"
+  },
+  "Hero": {
+    "slogan": "Your Trusted Partner for Security, Cleaning, and Excellence",
+    "description": "Reliable services tailored to ensure safety, hygiene, and operational success",
+    "button": "explore our services"
+  },
+  "OurService": {
+    "title": "our services",
+    "description": "Reliable solutions tailored to meet your needs in security, cleanliness, and professional development",
+    "learnmore": "learnmore",
+    "security_service": "security service",
+    "security_service_description": "Professional armed and unarmed security personnel, mobile patrols, event security, and advanced surveillance solutions.",
+    "cleaning_service": "cleaning service",
+    "cleaning_service_description": "Comprehensive cleaning solutions for offices, residences, industries, and post-construction projects.",
+    "supplies_service": "provision of security and cleaning supplies",
+    "supplies_service_description": "Providing high-quality security uniforms, cleaning supplies, tools, and personal protective equipment to ensure safety and efficiency.",
+    "skill_supplies": "skill development",
+    "skill_supplies_description": "Skill-enhancing programs for security staff, cleaning personnel, and customer service teams."
+  },
+  "WhyChooseUS": {
+    "title": "why choose us",
+    "description": "We deliver excellence through our commitment to quality, reliability, and customer satisfaction",
+    "experience": "experience",
+    "experience_description": "Our team of trained professionals have years of experience in their respective fields.",
+    "reliability": "reliability",
+    "reliability_description": "We are committed to providing consistent and reliable services.",
+    "customerfocus": "customer focus",
+    "customerfocus_description": "We prioritize our customers' needs and strive to exceed their expectations",
+    "innovation": "innovation",
+    "innovation_description": "We use innovation to deliver the best solutions.",
+    "community_involvement": "community involvement",
+    "community_involvement_description": "We show our involvement to the community through various initiatives"
+  },
+  "OurAchievementsInNumbers": {
+    "title": "Our Achievements in Numbers",
+    "description": "Measuring our success through our impact and dedication to excellence.",
+    "number_clients": "Satisfied clients across Ethiopia",
+    "years_excellence": "Years of delivering excellence in security and cleaning services.",
+    "skilled_employees": "Skilled employees trained in security and janitorial services",
+    "successfull_projects": "Projects successfully completed for businesses and communities."
+  },
+  "OurTrustedClients": {
+    "title": "our trusted clients"
+  },
+  "WhatOurClientsSay": {
+    "title": "What Our Clients Say",
+    "description": "Trusted by businesses and communities for reliable security and cleaning services."
+  },
+  "CTA": {
+    "title": "Ready to Experience Excellence?",
+    "description": "Contact us today to discuss how we can help secure and maintain your space",
+    "contactus_now": "Contact Us Now"
+  },
+  "Footer": {
+    "logo_description": "Your trusted partner for security and cleaning excellence in Ethiopia.",
+    "quick_links": {
+      "title": "quick links",
+      "services": "services",
+      "aboutus": "aboutus",
+      "clients": "clients",
+      "contactus": "contactus"
+    },
+    "services": {
+      "title": "our services",
+      "security_service": "security service",
+      "cleaning_service": "cleaning service",
+      "supplies": "provision of secure and cleaning supplies",
+      "skill": "skill development"
+    },
+    "contactinfo": {
+      "title": "contact info",
+      "address": "Addis Ababa, Ethiopia"
+    }
+  }
+}

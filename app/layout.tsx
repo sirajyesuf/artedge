@@ -2,45 +2,50 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artedgesecurityandcleaning.com"),
-  title: "ArtEdge Security and Cleaning Services",
+  metadataBase: new URL("https://www.artedgesecurityandcleaning.com"),
+  title: "Art Edge Trading PLC - Security, Cleaning & Training Services",
   description:
-    "ArtEdge Trading is a leading provider of security and cleaning services in Ethiopia.",
+    "Art Edge Trading PLC, established in 2021, is a leading provider of security, cleaning, skill enhancement, and material supply services in Ethiopia. We specialize in armed and unarmed security personnel, janitorial services, training programs, and cleaning equipment supply.",
   keywords:
-    "security, cleaning, janitorial, professional development, guarding, surveillance, cleaning supplies, training, security uniforms, PPE, facility management,Ethiopia,AddisAbaba",
-  authors: [{ name: "ArtEdge" }],
+    "security services, cleaning services, facility management, skill training, material supply, guarding, surveillance, janitorial, PPE, security uniforms, Ethiopia, Addis Ababa",
+  authors: [{ name: "Art Edge Trading PLC" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://artedgesecurityandcleaning.com",
-    siteName: "ArtEdge Security and Cleaning Services",
+    url: "https://www.artedgesecurityandcleaning.com",
+    siteName: "Art Edge Trading PLC",
     images: [
       {
-        url: "https://artedgesecurityandcleaning.com/artedgelogo.jpg",
+        url: "https://www.artedgesecurityandcleaning.com/artedgelogo.jpg",
         width: 1200,
         height: 630,
-        alt: "ArtEdge Security and Cleaning Services",
+        alt: "Art Edge Trading PLC - Security & Cleaning Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ArtEdge Security and Cleaning Services",
+    title: "Art Edge Trading PLC - Security & Cleaning Services",
     description:
-      "ArtEdge Trading is a leading provider of security and cleaning services in Ethiopia.",
-    images: ["https://artedgesecurityandcleaning.com/artedgelogo.jpg"],
+      "Art Edge Trading PLC offers top-tier security, cleaning, and training services in Ethiopia, ensuring safety, hygiene, and skill development.",
+    images: ["https://www.artedgesecurityandcleaning.com/artedgelogo.jpg"],
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <meta
           name="google-site-verification"
@@ -48,9 +53,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Navbar />
-        <main className="pt-20">{children}</main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

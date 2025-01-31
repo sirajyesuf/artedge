@@ -1,0 +1,89 @@
+{
+  "HomePage": {
+    "title": "Hello ethiopia!"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "am": "Amharic",
+    "label": "Language"
+  },
+  "NavBar": {
+    "home": "መነሻ",
+    "services": "አገልግሎቶች",
+    "aboutus": "ስለ እኛ",
+    "contactus": "አግኙን"
+  },
+  "Hero": {
+    "slogan": "የደህንነት፣ ንፅህና እና ለምነት የሚያረጋግጥ አስተማማኝ አጋር",
+    "description": "ደህንነት፣ ንፅህና እና ስኬታማ ክወና ለማረጋገጥ የተበጁ አገልግሎቶች",
+    "button": "አገልግሎቶቻችንን ያስሱ"
+  },
+  "OurService": {
+    "title": "የእኛ አገልግሎቶች",
+    "description": "በደህንነት፣ ንፅህና እና ሙያዊ ልማት ውስጥ የእርስዎን ፍላጎቶች ለማሟላት የተበጁ አስተማማኝ መፍትሄዎች",
+    "learnmore": "ተጨማሪ ይወቁ",
+    "security_service": "የደህንነት አገልግሎት",
+    "security_service_description": "የሙያ የተሰማሩ እና ያልተሰማሩ የደህንነት ሰራተኞች፣ ተንቀሳቃሽ ፓትሮሎች፣ የክስተት ደህንነት እና የላቀ የተቆጣጠር መፍትሄዎች።",
+    "cleaning_service": "የንፅህና አገልግሎት",
+    "cleaning_service_description": "ለቢሮዎች፣ ለመኖሪያ ቤቶች፣ ለኢንዱስትሪዎች እና ለግንባታ በኋላ ለሚከናወኑ ፕሮጀክቶች የተሟላ የንፅህና መፍትሄዎች።",
+    "supplies_service": "የደህንነት እና የንፅህና እቃዎች አቅርቦት",
+    "supplies_service_description": "የደህንነት ዩኒፎርሞች፣ የንፅህና እቃዎች፣ መሳሪያዎች እና የግል መከላከያ መሳሪያዎችን ለመስጠት ከፍተኛ ጥራት ያላቸውን እቃዎች ማቅረብ።",
+    "skill_supplies": "የስልጠና ልማት",
+    "skill_supplies_description": "ለደህንነት ሰራተኞች፣ ለንፅህና ሰራተኞች እና ለደንበኞች አገልግሎት ቡድኖች የስልጠና ፕሮግራሞች።"
+  },
+  "WhyChooseUS": {
+    "title": "ለምን እኛን መምረጥ",
+    "description": "በጥራት ፣ አስተማማኝነት እና ደንበኛ እርካታ ላይ ባለን ቁርጠኝነት ምርጡን እናቀርባለን።",
+    "experience": "ልምድ",
+    "experience_description": "የተሰለጠኑ ባለሙያዎቻችን በስራቸው ዘርፍ የረዥም ዓመታት ልምድ አላቸው።",
+    "reliability": "አስተማማኝነት",
+    "reliability_description": "በቋሚ እና አስተማማኝ አገልግሎቶች ለመስጠት ቁርጠኞች ነን።",
+    "customerfocus": "ደንበኛ ማዕከል",
+    "customerfocus_description": "የደንበኞቻችን ፍላጎቶችን በማስቀደም ከሚጠበቀው በላይ አገልግሎት ለመስጠት እንጥራለን።",
+    "innovation": "ፈጠራ",
+    "innovation_description": "ምርጡን መፍትሄዎች ለመስጠት ፈጠራን እንጠቀማለን።",
+    "community_involvement": "በማህበረሰቡ ውስጥ ተሳትፎ",
+    "community_involvement_description": "በተለያዩ ተቋማዊ ተቀናሾች በኩል በማህበረሰቡ ውስጥ ተሳታፊ እንደምንሆን እናሳያለን።"
+  },
+  "OurAchievementsInNumbers": {
+    "title": "በቁጥር የእኛ ስኬቶች",
+    "description": "በፍላጎታችን እና በምርጥነት ላይ ባለን ቁርጠኝነት ስኬታችንን እንለካለን።",
+    "number_clients": "በኢትዮጵያ የሚገኙ የተረኩ ደንበኞች",
+    "years_excellence": "የደህንነት እና የንፅህና አገልግሎቶችን በምርጥነት የምናቀርባቸው ዓመታት።",
+    "skilled_employees": "በደህንነት እና በንፅህና አገልግሎቶች የተሰለጠኑ ባለሙያዎች",
+    "successfull_projects": "ለንግድ ድርጅቶች እና ማህበረሰቦች በተሳካ ሁኔታ የተጠናቀቁ ፕሮጀክቶች።"
+  },
+  "OurTrustedClients": {
+    "title": "የምንታመናቸው ደንበኞች"
+  },
+  "WhatOurClientsSay": {
+    "title": "ደንበኞቻችን ምን ይላሉ?",
+    "description": "በንግድ ድርጅቶች እና ማህበረሰቦች የታመነ የደህንነት እና የንፅህና አገልግሎቶች።"
+  },
+  "CTA": {
+    "title": "ምርጡን ለመሞከር ዝግጁ ነዎት?",
+    "description": "ቦታዎን ለመጠበቅ እና ለመደለደል እንዴት እንደምንረዳዎት ለማወቅ ዛሬ ያግኙን።",
+    "contactus_now": "አሁን ያግኙን"
+  },
+  "Footer": {
+    "logo_description": "በኢትዮጵያ ውስጥ የደህንነት እና የንፅህና ምርጥነት የምታመኑበት አጋር።",
+    "quick_links": {
+      "title": "ፈጣን አገናኞች",
+      "services": "አገልግሎቶች",
+      "aboutus": "ስለእኛ",
+      "clients": "ደንበኞች",
+      "contactus": "አግኙን"
+    },
+    "services": {
+      "title": "አገልግሎቶች",
+      "security_service": "የደህንነት አገልግሎት",
+      "cleaning_service": "የንፅህና አገልግሎት",
+      "supplies": "የደህንነት እና የንፅህና እቃዎች አቅርቦት",
+      "skill": "የስራ ክህሎት ማዳበር"
+    },
+    "contactinfo": {
+      "title": "የመገኛ መረጃ",
+      "address": "አዲስ አበባ፣ ኢትዮጵያ"
+    }
+  }
+}
