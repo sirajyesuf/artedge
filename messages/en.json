@@ -166,6 +166,10 @@
       "eco_friendly_description": "Environmentally conscious cleaning solutions",
       "customer_satisfaction": "Customer Satisfaction",
       "customer_satisfaction_description": "Committed to exceeding expectations"
+    },
+    "cta": {
+      "title": "Ready to Experience Our Professional Cleaning Services?",
+      "button": "Contact Us Today"
     }
   },
   "Supplies": {

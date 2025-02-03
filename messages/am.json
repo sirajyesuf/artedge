@@ -185,6 +185,10 @@
       "eco_friendly_description": "ለአካባቢ የሚያስተዳድሩ የማጽዳት መፍትሄዎች",
       "customer_satisfaction": "ደንበኛ እርካታ",
       "customer_satisfaction_description": "ከጥበቃ በላይ የሆነ አገልግሎት ለመስጠት ቁርጠኛ"
+    },
+    "cta": {
+      "title": "ሙያዊ የንጽህና አገልግሎታችንን ለማሞከር ዝግጁ ነዎት?",
+      "button": "አሁን ያግኙን"
     }
   },
   "Supplies": {
