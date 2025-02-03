@@ -221,6 +221,10 @@
       "structured_programs_description": "Well-designed modules ensuring comprehensive skill development.",
       "hands_on_learning": "Hands-on Learning",
       "hands_on_learning_description": "Practice-oriented training with real-world scenarios and demonstrations"
+    },
+    "cta":{
+      "title":"Ready to Elevate Your Skills?",
+      "button":"Contact Us Today"
     }
   },
   "ContactUS": {

@@ -240,6 +240,10 @@
       "structured_programs_description": "የተሟላ ክህሎት እድገትን የሚያረጋግጡ በደንብ የተዘጋጁ ሞጁሎች።",
       "hands_on_learning": "ተግባራዊ ትምህርት",
       "hands_on_learning_description": "በእውነተኛ የህይወት ሁኔታዎች እና ማሳያዎች ላይ የተመሰረተ የስልጠና ዘዴ።"
+    },
+    "cta": {
+      "title": "ክህሎትዎን ለማሳደግ ዝግጁ ነዎት?",
+      "button": "ዛሬ ያግኙን"
     }
   },
   "ContactUS": {
