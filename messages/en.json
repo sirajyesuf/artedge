@@ -6,7 +6,7 @@
     "contactus": "contactus"
   },
   "Hero": {
-    "slogan": "Your Trusted Partner for Security, Cleaning, and Excellence",
+    "slogan": "Your Trusted Partner in Security, Cleaning & Skill Enhancement.",
     "description": "Reliable services tailored to ensure safety, hygiene, and operational success",
     "button": "explore our services"
   },
@@ -222,9 +222,9 @@
       "hands_on_learning": "Hands-on Learning",
       "hands_on_learning_description": "Practice-oriented training with real-world scenarios and demonstrations"
     },
-    "cta":{
-      "title":"Ready to Elevate Your Skills?",
-      "button":"Contact Us Today"
+    "cta": {
+      "title": "Ready to Elevate Your Skills?",
+      "button": "Contact Us Today"
     }
   },
   "ContactUS": {
