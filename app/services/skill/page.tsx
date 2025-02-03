@@ -3,29 +3,46 @@ import { GraduationCap, ClipboardCheck, Users } from "lucide-react";
 
 import Link from "next/link";
 import Image from "next/image";
-
-const whatweoffer = [
-  {
-    image: "/services/skill/securitytraning.png",
-    title: "Security Training",
-    description:
-      "Training programs designed to equip security personnel with effective defense techniques and emergency response skills.",
-  },
-  {
-    image: "/services/skill/cleaningtraning.png",
-    title: "Cleaning Staff Training",
-    description:
-      "Training programs designed to enhance the effectiveness of cleaning staff in using efficient cleaning methods, operating cleaning equipment, and improving their customer relationship skills",
-  },
-  {
-    image: "/services/skill/customerservice.png",
-    title: "Customer Service Training",
-    description:
-      "Training programs designed to enhance the interpersonal and service skills of frontline employees to ensure customer satisfaction.",
-  },
-];
-
+import { useTranslations } from "next-intl";
 function App() {
+  const t = useTranslations("skill");
+
+  const whatweoffer = [
+    {
+      image: "/services/skill/securitytraning.png",
+      title: t("whatweoffer.security_training"),
+      description: t("whatweoffer.security_training_description"),
+    },
+    {
+      image: "/services/skill/cleaningtraning.png",
+      title: t("whatweoffer.cleaning_staff_training"),
+      description: t("whatweoffer.cleaning_staff_training_description"),
+    },
+    {
+      image: "/services/skill/customerservice.png",
+      title: t("whatweoffer.customer_services_training"),
+      description: t("whatweoffer.customer_services_training_description"),
+    },
+  ];
+
+  const whychooseus = [
+    {
+      icon: GraduationCap,
+      title: t("whychooseus.expert_trainers"),
+      description: t("whychooseus.expert_trainers_description"),
+    },
+    {
+      icon: ClipboardCheck,
+      title: t("whychooseus.structured_programs"),
+      description: t("whychooseus.structured_programs_description"),
+    },
+    {
+      icon: Users,
+      title: t("whychooseus.hands_on_learning"),
+      description: t("whychooseus.hands_on_learning_description"),
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -41,12 +58,9 @@ function App() {
         <div className="absolute inset-0 bg-blue-900/70"></div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Building a Skilled and Professional Workforce
+            {t("title")}
           </h1>
-          <p className="text-xl text-gray-100 mb-8">
-            Empowering employees through expert-led training programs for
-            security, cleaning, and customer service.
-          </p>
+          <p className="text-xl text-gray-100 mb-8">{t("description")}</p>
         </div>
       </div>
 
@@ -54,7 +68,7 @@ function App() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-            What We Offer
+            {t("whatweoffer.title")}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whatweoffer.map((service, index) => (
@@ -68,25 +82,13 @@ function App() {
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-            Why Choose Our Training Programs?
+            {t("whychooseus.title")}
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <FeatureCard
-              icon={GraduationCap}
-              title="Expert Trainers"
-              description="Learn from industry professionals with years of practical experience."
-            />
-            <FeatureCard
-              icon={ClipboardCheck}
-              title="Structured Programs"
-              description="Well-designed modules ensuring comprehensive skill development."
-            />
-            <FeatureCard
-              icon={Users}
-              title="Hands-on Learning"
-              description="Practice-oriented training with real-world scenarios and demonstrations."
-            />
-          </div>
+            <div className="grid md:grid-cols-3 gap-8">
+            {whychooseus.map((feature, index) => (
+              <FeatureCard key={index} {...feature} />
+            ))}
+            </div>
         </div>
       </section>
 

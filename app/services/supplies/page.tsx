@@ -1,67 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-const securitySupplies = [
-  {
-    title: "Safety Boots",
-    image: "/services/supplies/safetyboots.png",
-  },
-  {
-    title: "Protective Helmets",
-    image: "/services/supplies/protectivehelmet.png",
-  },
-  {
-    title: "Security Uniforms",
-    image: "/services/supplies/securityuniform.png",
-  },
-  {
-    title: "Body Armor",
-    image: "/services/supplies/bodyarmor.png",
-  },
-];
-
-const cleaningChemicals = [
-  {
-    title: "Disinfectants",
-    image: "/services/supplies/disinfectant.png",
-  },
-  {
-    title: "Sanitizers",
-    image: "/services/supplies/sanitizers.png",
-  },
-  {
-    title: "Cleaning Wipes",
-    image: "/services/supplies/cleaningwipes.png",
-  },
-  {
-    title: "Specialized Cleaning Agents",
-    image: "/services/supplies/specializedcleaningagent.png",
-  },
-];
-
-const cleaningEquipment = [
-  {
-    title: "Microfiber Cloths",
-    image: "/services/supplies/microfibercloths.png",
-  },
-  {
-    title: "Scrubbers",
-    image: "/services/supplies/scrubbers.png",
-  },
-  {
-    title: "Squeegees",
-    image: "/services/supplies/squeegees.png",
-  },
-  {
-    title: "Cleaning Sprays",
-    image: "/services/supplies/cleaningsprays.png",
-  },
-  {
-    title: "Sponges",
-    image: "/services/supplies/sponges.png",
-  },
-];
+import { useTranslations } from "next-intl";
 
 function Product({ title, image }: { title: string; image: string }) {
   return (
@@ -81,6 +21,68 @@ function Product({ title, image }: { title: string; image: string }) {
 }
 
 export default function Supplies() {
+  const t = useTranslations("Supplies");
+  const securitySupplies = [
+    {
+      title: t("securitysupplies.safety_boots"),
+      image: "/services/supplies/safetyboots.png",
+    },
+    {
+      title: t("securitysupplies.protective_helmets"),
+      image: "/services/supplies/protectivehelmet.png",
+    },
+    {
+      title: t("securitysupplies.security_uniforms"),
+      image: "/services/supplies/securityuniform.png",
+    },
+    {
+      title: t("securitysupplies.body_armor"),
+      image: "/services/supplies/bodyarmor.png",
+    },
+  ];
+
+  const cleaningChemicals = [
+    {
+      title: t("cleaningsupplies.disinfectants"),
+      image: "/services/supplies/disinfectant.png",
+    },
+    {
+      title: t("cleaningsupplies.sanitizers"),
+      image: "/services/supplies/sanitizers.png",
+    },
+    {
+      title: t("cleaningsupplies.wipes"),
+      image: "/services/supplies/cleaningwipes.png",
+    },
+    {
+      title: t("cleaningsupplies.agent"),
+      image: "/services/supplies/specializedcleaningagent.png",
+    },
+  ];
+
+  const cleaningEquipment = [
+    {
+      title: t("cleaningsupplies.microfiber_cloths"),
+      image: "/services/supplies/microfibercloths.png",
+    },
+    {
+      title: t("cleaningsupplies.scrubbers"),
+      image: "/services/supplies/scrubbers.png",
+    },
+    {
+      title: t("cleaningsupplies.squeegees"),
+      image: "/services/supplies/squeegees.png",
+    },
+    {
+      title: t("cleaningsupplies.sprays"),
+      image: "/services/supplies/cleaningsprays.png",
+    },
+    {
+      title: t("cleaningsupplies.sponges"),
+      image: "/services/supplies/sponges.png",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <div className="relative h-[50vh] md:h-[60vh]">
@@ -116,13 +118,10 @@ export default function Supplies() {
           <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl relative z-10">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-                Comprehensive Security & Cleaning Supplies for Every Need.
+                {t("title")}
               </h1>
               <p className="mt-4 text-xl text-blue-100 mb-8">
-                At Art Edge, we offer premium security and cleaning supplies to
-                keep your spaces safe and spotless. From modern protective gear
-                to eco-friendly cleaning products, we deliver reliable solutions
-                for offices, commercial centers, and homes.
+                {t("description")}
               </p>
             </div>
           </div>
@@ -133,7 +132,7 @@ export default function Supplies() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Security Supplies
+            {t("securitysupplies.title")}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {securitySupplies.map((item, index) => (
@@ -147,13 +146,13 @@ export default function Supplies() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Cleaning Supplies
+            {t("cleaningsupplies.title1")}
           </h2>
 
           {/* Cleaning Chemicals */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-800 mb-8">
-              Cleaning Chemicals
+              {t("cleaningsupplies.title2")}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {cleaningChemicals.map((item, index) => (
@@ -165,7 +164,7 @@ export default function Supplies() {
           {/* Cleaning Equipment and Tools */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-800 mb-8">
-              Cleaning Equipment and Tools
+              {t("cleaningsupplies.title3")}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {cleaningEquipment.map((item, index) => (

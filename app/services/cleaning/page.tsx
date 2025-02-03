@@ -12,63 +12,62 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-const services = [
-  {
-    icon: <Building2 className="w-6 h-6 text-blue-600" />,
-    title: "Office Cleaning",
-    description:
-      "Professional cleaning services tailored for office spaces, ensuring a pristine work environment.",
-  },
-  {
-    icon: <Home className="w-6 h-6 text-blue-600" />,
-    title: "Residential Cleaning",
-    description:
-      "Comprehensive home cleaning services that maintain the comfort and hygiene of your living space.",
-  },
-  {
-    icon: <Factory className="w-6 h-6 text-blue-600" />,
-    title: "Industrial Cleaning",
-    description:
-      "Specialized cleaning solutions for industrial facilities, warehouses, and manufacturing plants.",
-  },
-  {
-    icon: <Brush className="w-6 h-6 text-blue-600" />,
-    title: "Post-Construction Cleaning",
-    description:
-      "Thorough cleanup services for newly constructed or renovated properties.",
-  },
-  {
-    icon: <Sparkles className="w-6 h-6 text-blue-600" />,
-    title: "Sanitization Services",
-    description:
-      "Advanced disinfection and sanitization solutions for germ-free environments.",
-  },
-];
-
-const features = [
-  {
-    icon: <Shield className="w-8 h-8 text-blue-600" />,
-    title: "Professional Excellence",
-    description: "Trained and certified cleaning experts",
-  },
-  {
-    icon: <Clock className="w-8 h-8 text-blue-600" />,
-    title: "Reliable Service",
-    description: "Punctual and consistent cleaning schedules",
-  },
-  {
-    icon: <Leaf className="w-8 h-8 text-blue-600" />,
-    title: "Eco-Friendly",
-    description: "Environmentally conscious cleaning solutions",
-  },
-  {
-    icon: <Users className="w-8 h-8 text-blue-600" />,
-    title: "Customer Satisfaction",
-    description: "Committed to exceeding expectations",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Cleaning() {
+  const t = useTranslations("CleaningService");
+
+  const services = [
+    {
+      icon: <Building2 className="w-6 h-6 text-blue-600" />,
+      title: t("services.office_cleaning"),
+      description: t("services.office_cleaning_description"),
+    },
+    {
+      icon: <Home className="w-6 h-6 text-blue-600" />,
+      title: t("services.residential_cleaning"),
+      description: t("services.residential_cleaning_description"),
+    },
+    {
+      icon: <Factory className="w-6 h-6 text-blue-600" />,
+      title: t("services.industrial_cleaning"),
+      description: t("services.industrial_cleaning_description"),
+    },
+    {
+      icon: <Brush className="w-6 h-6 text-blue-600" />,
+      title: t("services.post_construction_cleaning"),
+      description: t("services.post_construction_cleanig_description"),
+    },
+    {
+      icon: <Sparkles className="w-6 h-6 text-blue-600" />,
+      title: t("services.sanitization_services"),
+      description: t("services.sanitization_services_description"),
+    },
+  ];
+
+  const features = [
+    {
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      title: t("features.professional_excellence"),
+      description: t("features.professional_excellence_description"),
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
+      title: t("features.reliable_service"),
+      description: t("features.reliable_service_description"),
+    },
+    {
+      icon: <Leaf className="w-8 h-8 text-blue-600" />,
+      title: t("features.eco_friendly"),
+      description: t("features.eco_friendly_description"),
+    },
+    {
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: t("features.customer_satisfaction"),
+      description: t("features.customer_satisfaction_description"),
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <div className="relative h-[50vh] md:h-[60vh]">
@@ -104,13 +103,10 @@ export default function Cleaning() {
           <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl relative z-10">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-                Professional Cleaning Solutions for Every Space
+                {t("title")}
               </h1>
               <p className="mt-4 text-xl text-blue-100 mb-8">
-                At Art Edge, we deliver exceptional cleaning services tailored
-                to your needs. From offices to homes, our expert team ensures
-                spotless, healthy environments using eco-friendly solutions and
-                advanced cleaning techniques.
+                {t("description")}
               </p>
             </div>
           </div>
@@ -121,7 +117,7 @@ export default function Cleaning() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            What We Offer
+            {t("services.title")}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -144,7 +140,7 @@ export default function Cleaning() {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Choose Art Edge for Cleaning Services?
+            {t("features.title")}
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {features.map((feature, index) => (

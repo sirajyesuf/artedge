@@ -116,5 +116,124 @@
       "title": "ourvission in frames",
       "description": "Celebrating the creative visionaries shaping our journey."
     }
+  },
+  "SecurityService": {
+    "title": "Your Trusted Partner in Security Solutions",
+    "description": "Serving businesses, events, and communities with unmatched expertise.",
+    "services": {
+      "title": "Our Security Solutions",
+      "vip_protection_service": "VIP protection service",
+      "vip_protection_service_description": "Professional security personnel trained to handle various security scenarios with expertise and discretion.",
+      "event_escort_service": "Event Escort Service",
+      "event_escort_service_description": "Comprehensive security management for events of all sizes, ensuring smooth operations and guest safety.",
+      "asset_escort_service": "Asset escort service",
+      "asset_escort_service_description": "Round-the-clock surveillance and monitoring services to keep your premises secure at all times",
+      "escort_service": "escort service",
+      "escort_service_description": "Customized access control solutions to manage visitor traffic and secure your premises",
+      "survilance_and_monitoring_service": "Survilance and monitoring service",
+      "survilance_and_monitoring_service_description": "Expert security consulting services to help you design and implement a robust security strategy",
+      "crisis_management_and_emergency_response_service": "crisis management and emergency response service",
+      "crisis_management_and_emergency_response_service_description": "Rapid response teams ready to handle emergencies and security incidents with speed and efficiency."
+    }
+  },
+  "CleaningService": {
+    "title": "Professional Cleaning Solutions for Every Space",
+    "description": "At Art Edge, we deliver exceptional cleaning services tailored to your needs. From offices to homes, our expert team ensures spotless, healthy environments using eco-friendly solutions and advanced cleaning techniques",
+    "services": {
+      "title": "What We Offer",
+      "office_cleaning": "office cleaning",
+      "office_cleaning_description": "Professional cleaning services tailored for office spaces, ensuring a pristine work environment.",
+      "residential_cleaning": "residential cleaning",
+      "residential_cleaning_description": "Comprehensive home cleaning services that maintain the comfort and hygiene of your living space.",
+      "industrial_cleaning": "Industrial Cleaning",
+      "industrial_cleaning_description": "Specialized cleaning solutions for industrial facilities, warehouses, and manufacturing plants.",
+      "post_construction_cleaning": "Post-Construction Cleaning",
+      "post_construction_cleanig_description": "Thorough cleanup services for newly constructed or renovated properties.",
+      "sanitization_services": "Sanitization Services",
+      "sanitization_services_description": "Advanced disinfection and sanitization solutions for germ-free environments."
+    },
+    "features": {
+      "title": "Why Choose Art Edge for Cleaning Services?",
+      "professional_excellence": "Professional Excellence",
+      "professional_excellence_description": "Trained and certified cleaning experts",
+      "reliable_service": "Reliable Service",
+      "reliable_service_description": "Punctual and consistent cleaning schedules",
+      "eco_friendly": "Eco-Friendly",
+      "eco_friendly_description": "Environmentally conscious cleaning solutions",
+      "customer_satisfaction": "Customer Satisfaction",
+      "customer_satisfaction_description": "Committed to exceeding expectations"
+    }
+  },
+  "Supplies": {
+    "title": "Comprehensive Security & Cleaning Supplies for Every Need",
+    "description": "At Art Edge, we offer premium security and cleaning supplies to keep your spaces safe and spotless. From modern protective gear to eco-friendly cleaning products, we deliver reliable solutions for offices, commercial centers, and homes.",
+    "securitysupplies": {
+      "title": "Security Supplies",
+      "safety_boots": "Safety Boots",
+      "protective_helmets": "Protection Helmets",
+      "security_uniforms": "Security uniforms",
+      "body_armor": "body armor"
+    },
+    "cleaningsupplies": {
+      "title1": "Cleaning Supplies",
+      "title2": "Cleaning Chemicals",
+      "title3": "Cleaning Equipment and Tools",
+      "disinfectants": "disinfectants",
+      "sanitizers": "sanitizers",
+      "wipes": "cleaning wipes",
+      "agent": "Specialized Cleaning Agents",
+      "microfiber_cloths": "Microfiber Cloths",
+      "scrubbers": "scrubbers",
+      "squeegees": "squeegees",
+      "sprays": "cleaning sprays",
+      "sponges": "sponges"
+    }
+  },
+  "skill": {
+    "title": "Building a Skilled and Professional Workforce",
+    "description": "Building a Skilled and Professional Workforce Empowering employees through expert-led training programs for security, cleaning, and customer service",
+    "whatweoffer": {
+      "title": "What We Offer",
+      "security_training": "Security Training",
+      "security_training_description": "Training programs designed to equip security personnel with effective defense techniques and emergency response skills",
+      "cleaning_staff_training": "Cleaning Staff Training",
+      "cleaning_staff_training_description": "Training programs designed to enhance the effectiveness of cleaning staff in using efficient cleaning methods, operating cleaning equipment, and improving their customer relationship skills",
+      "customer_services_training": "Customer Service Training",
+      "customer_services_training_description": "Training programs designed to enhance the interpersonal and service skills of frontline employees to ensure customer satisfaction"
+    },
+    "whychooseus": {
+      "title": "Why Choose Our Training Programs?",
+      "expert_trainers": "Expert Trainers",
+      "expert_trainers_description": "Learn from industry professionals with years of practical experience.",
+      "structured_programs": "Structured Programs",
+      "structured_programs_description": "Well-designed modules ensuring comprehensive skill development.",
+      "hands_on_learning": "Hands-on Learning",
+      "hands_on_learning_description": "Practice-oriented training with real-world scenarios and demonstrations"
+    }
+  },
+  "ContactUS": {
+    "title": "Get in Touch with Us",
+    "description": "We&apos;re here to help with your security, cleaning, and professional development needs.",
+    "message": {
+      "title": "Send Us a Message",
+      "fullname": "Full Name",
+      "email": "Email address",
+      "subject": "subject",
+      "message": "message",
+      "send_message": "send  message"
+    },
+    "contactusdetail": {
+      "title": "Our Contact Details",
+      "phone": "phone",
+      "email": "email",
+      "address_title": "address",
+      "address": "Yeka Subcity, Woreda 05 Addis Ababa, Ethiopia",
+      "findus": "find us"
+    },
+    "cta": {
+      "title": "Need more details?",
+      "description": "Contact us directly, and our team will assist you.",
+      "button": "Call us now"
+    }
   }
 }

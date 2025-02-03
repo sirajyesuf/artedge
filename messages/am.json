@@ -123,5 +123,135 @@
       "title": "በፎቶ ውስጥ የእኛ ራእይ",
       "description": "የእኛን ጉዞ የሚያስተዳድሩ ፈጣሪ ራእዮችን እናከብራለን።"
     }
+  },
+  "SecurityService": {
+    "title": "የደህንነት አፈፃፀም አስተማማኝ አጋርዎ",
+    "description": "ከልዩ እውቀት ጋር ለንግድ ድርጅቶች፣ ዝግጅቶች እና ማህበረሰቦች አገልግሎት የምንሰጥ ነን።",
+    "services": {
+      "title": "የእኛ የደህንነት አፈፃፀም አገልግሎቶች",
+      "vip_protection_service": "የቪአይፒ ጥበቃ አገልግሎት",
+      "vip_protection_service_description": "በልዩ እውቀት እና አስተዋይነት የተለያዩ የደህንነት ሁኔታዎችን ለመቆጣጠር የተሰለጠኑ ባለሙያዎች።",
+      "event_escort_service": "የዝግጅት አጋር አገልግሎት",
+      "event_escort_service_description": "ለሁሉም የዝግጅት መጠኖች የሚያግዝ የደህንነት አስተዳደር፣ ስራዎችን በሚከታተል ሁኔታ እና እንግዶችን ደህንነቱ የተጠበቀ ማድረግ።",
+      "asset_escort_service": "የንብረት አጋር አገልግሎት",
+      "asset_escort_service_description": "የ24 ሰዓት ክትትል እና ቁጥጥር አገልግሎቶች የእርስዎን ንብረቶች ሁልጊዜ ደህንነቱ የተጠበቀ ለማድረግ።",
+      "escort_service": "አጋር አገልግሎት",
+      "escort_service_description": "የተለያዩ የጉብኝት ፍሰት እና የእርስዎን ንብረቶች ደህንነት ለመቆጣጠር የተለያዩ የመዳረሻ ቁጥጥር አገልግሎቶች።",
+      "survilance_and_monitoring_service": "ክትትል እና ቁጥጥር አገልግሎት",
+      "survilance_and_monitoring_service_description": "የተለያዩ የደህንነት ስትራቴጂዎችን ለመንደፍ እና ለመተግበር የሚያግዙ የደህንነት አማካሪ አገልግሎቶች።",
+      "crisis_management_and_emergency_response_service": "የአደጋ አስተዳደር እና የአደጋ ምላሽ አገልግሎት",
+      "crisis_management_and_emergency_response_service_description": "በፍጥነት እና በብቃት የአደጋዎችን እና የደህንነት አደጋዎችን ለመቆጣጠር የሚያግዙ ፈጣን ምላሽ ቡድኖች።"
+    }
+  },
+  "features": {
+    "title": "ለማጽዳት አገልግሎቶች ለምን አርት ኤጅ እንመርጣለን?",
+    "professional_excellence": "ባለሙያ የሆነ አፈፃፀም",
+    "professional_excellence_description": "የተሰለጠኑ እና የተመዘገቡ የማጽዳት ባለሙያዎች",
+    "reliable_service": "አስተማማኝ አገልግሎት",
+    "reliable_service_description": "በጊዜው እና ወጥነት ያለው የማጽዳት ዝግጅት",
+    "eco_friendly": "ለአካባቢ የሚያስተዳድር",
+    "eco_friendly_description": "ለአካባቢ የሚያስተዳድሩ የማጽዳት መፍትሄዎች",
+    "customer_satisfaction": "ደንበኛ እርካታ",
+    "customer_satisfaction_description": "ከጥበቃ በላይ የሆነ አገልግሎት ለመስጠት ቁርጠኛ"
+  },
+  "CleaningService": {
+    "title": "ለእያንዳንዱ ቦታ ባለሙያ የማጽዳት መፍትሄዎች",
+    "description": "በአርት ኤጅ፣ ከቢሮዎች እስከ ቤቶች ድረስ የሚያስፈልጉዎትን የማጽዳት አገልግሎቶች እናቀርባለን። ባለሙያ ቡድናችን ለአካባቢ የሚያስተዳድሩ መፍትሄዎችን እና የላቀ የማጽዳት ቴክኒኮችን በመጠቀም ንፁህ እና ጤናማ አካባቢዎችን ያረጋግጣል።",
+    "services": {
+      "title": "ምን እንደምናቀርብ",
+      "office_cleaning": "የቢሮ ማጽዳት",
+      "office_cleaning_description": "ለቢሮ ቦታዎች የተለየ የሆነ የማጽዳት አገልግሎት፣ ንፁህ የስራ አካባቢን የሚያረጋግጥ።",
+      "residential_cleaning": "የቤት ማጽዳት",
+      "residential_cleaning_description": "የቤትዎን አለመጠቀሚያ እና ጤናማነት የሚያረጋግጥ የቤት ማጽዳት አገልግሎት።",
+      "industrial_cleaning": "የኢንዱስትሪ ማጽዳት",
+      "industrial_cleaning_description": "ለኢንዱስትሪያዊ ተቋማት፣ መጋዘኖች እና የምርት ፋብሪካዎች የተለየ የሆነ የማጽዳት መፍትሄዎች።",
+      "post_construction_cleaning": "የግንባታ በኋላ ማጽዳት",
+      "post_construction_cleanig_description": "ለአዲስ የተገነቡ ወይም የተሻሻሉ ንብረቶች የሚያገለግል የማጽዳት አገልግሎት።",
+      "sanitization_services": "የማፅዳት አገልግሎቶች",
+      "sanitization_services_description": "ለጤናማ አካባቢዎች የሚያገለግል የላቀ የማፅዳት እና ማጽዳት መፍትሄዎች።"
+    },
+    "features": {
+      "title": "ለማጽዳት አገልግሎቶች ለምን አርት ኤጅ እንመርጣለን?",
+      "professional_excellence": "ባለሙያ የሆነ አፈፃፀም",
+      "professional_excellence_description": "የተሰለጠኑ እና የተመዘገቡ የማጽዳት ባለሙያዎች",
+      "reliable_service": "አስተማማኝ አገልግሎት",
+      "reliable_service_description": "በጊዜው እና ወጥነት ያለው የማጽዳት ዝግጅት",
+      "eco_friendly": "ለአካባቢ የሚያስተዳድር",
+      "eco_friendly_description": "ለአካባቢ የሚያስተዳድሩ የማጽዳት መፍትሄዎች",
+      "customer_satisfaction": "ደንበኛ እርካታ",
+      "customer_satisfaction_description": "ከጥበቃ በላይ የሆነ አገልግሎት ለመስጠት ቁርጠኛ"
+    }
+  },
+  "Supplies": {
+    "title": "ለእያንዳንዱ ፍላጎት የሚያገለግል የደህንነት እና የማጽዳት እቃዎች",
+    "description": "በአርት ኤጅ፣ የእርስዎን ቦታዎች ደህንነቱ የተጠበቀ እና ንፁህ ለማድረግ የላቀ የደህንነት እና የማጽዳት እቃዎችን እናቀርባለን። ከዘመናዊ የጥበቃ መሳሪያዎች እስከ ለአካባቢ የሚያስተዳድሩ የማጽዳት ምርቶች ድረስ፣ ለቢሮዎች፣ የንግድ ማዕከሎች እና ቤቶች አስተማማኝ መፍትሄዎችን እናቀርባለን።",
+    "securitysupplies": {
+      "title": "የደህንነት እቃዎች",
+      "safety_boots": "የደህንነት ቦት",
+      "protective_helmets": "የጥበቃ ልብሶች",
+      "security_uniforms": "የደህንነት ዩኒፎርም",
+      "body_armor": "የሰውነት ሽፋን"
+    },
+    "cleaningsupplies": {
+      "title1": "የማጽዳት እቃዎች",
+      "title2": "የማጽዳት ኬሚካሎች",
+      "title3": "የማጽዳት መሣሪያዎች እና መሳሪያዎች",
+      "disinfectants": "የማፅዳት ምርቶች",
+      "sanitizers": "ማፅዳት ምርቶች",
+      "wipes": "የማጽዳት ማጣበቂያዎች",
+      "agent": "ልዩ የማጽዳት ኬሚካሎች",
+      "microfiber_cloths": "ማይክሮፋይበር ጨርቅ",
+      "scrubbers": "ስክራበር",
+      "squeegees": "ስኩዊጂ",
+      "sprays": "የማጽዳት ስፕሬዎች",
+      "sponges": "ስፖንጆች"
+    }
+  },
+  "skill": {
+    "title": "ብቃት ያለው እና ባለሙያ የሰራተኞች ኃይል ማሳደግ",
+    "description": "ብቃት ያለው እና ባለሙያ የሰራተኞች ኃይል ማሳደግ ሰራተኞችን በደህንነት፣ ማጽዳት እና የደንበኛ አገልግሎት የባለሙያ አሰልጣኝ ፕሮግራሞች በማስተማር ማስተዳደር።",
+    "whatweoffer": {
+      "title": "ምን እንደምናቀርብ",
+      "security_training": "የደህንነት ስልጠና",
+      "security_training_description": "የደህንነት ሰራተኞችን በውጤታማ የጥበቃ ቴክኒኮች እና የአደጋ ምላሽ ክህሎቶች ለማብቃት የተዘጋጁ የስልጠና ፕሮግራሞች።",
+      "cleaning_staff_training": "የማጽዳት ሰራተኞች ስልጠና",
+      "cleaning_staff_training_description": "የማጽዳት ሰራተኞችን በውጤታማ የማጽዳት ዘዴዎች፣ የማጽዳት መሣሪያዎችን በመጠቀም እና የደንበኛ ግንኙነት ክህሎቶቻቸውን ለማሻሻል የተዘጋጁ የስልጠና ፕሮግራሞች።",
+      "customer_services_training": "የደንበኛ አገልግሎት ስልጠና",
+      "customer_services_training_description": "የፊት ለፊት ሰራተኞችን በግንኙነት እና አገልግሎት ክህሎቶች ለማሻሻል እና ደንበኛ እርካታ ለማረጋገጥ የተዘጋጁ የስልጠና ፕሮግራሞች።"
+    },
+    "whychooseus": {
+      "title": "የእኛን የስልጠና ፕሮግራሞች ለምን እንመርጣለን?",
+      "expert_trainers": "ባለሙያ አሰልጣኞች",
+      "expert_trainers_description": "ከዓመታት ተግባራዊ ልምድ ያላቸው የሙያ ባለሙያዎች ይማሩ።",
+      "structured_programs": "የተዘጋጀ ፕሮግራሞች",
+      "structured_programs_description": "የተሟላ ክህሎት እድገትን የሚያረጋግጡ በደንብ የተዘጋጁ ሞጁሎች።",
+      "hands_on_learning": "ተግባራዊ ትምህርት",
+      "hands_on_learning_description": "በእውነተኛ የህይወት ሁኔታዎች እና ማሳያዎች ላይ የተመሰረተ የስልጠና ዘዴ።"
+    }
+  },
+  "ContactUS": {
+    "title": "ከእኛ ጋር ያገናኙን",
+    "description": "ለደህንነት፣ ማጽዳት እና ባለሙያ እድገት ፍላጎቶችዎ እኛ እዚህ አለን።",
+    "message": {
+      "title": "መልእክት ላኩልን",
+      "fullname": "ሙሉ ስም",
+      "email": "የኢሜል አድራሻ",
+      "subject": "ርዕስ",
+      "message": "መልእክት",
+      "send_message": "መልእክት ላክ"
+    },
+    "contactusdetail": {
+      "title": "የእኛ የአድራሻ ዝርዝሮች",
+      "phone": "ስልክ",
+      "email": "ኢሜል",
+      "address_title": "አድራሻ",
+      "address": "በየካ ክፍለ ከተማ ወረዳ 05 አዲስ አበባ፣ ኢትዮጵያ",
+      "findus": "እኛን ያግኙ"
+    },
+    "cta": {
+      "title": "ተጨማሪ ዝርዝሮች ይፈልጋሉ?",
+      "description": "በቀጥታ ያግኙን፣ እና ቡድናችን ይረዳዎታል።",
+      "button": "አሁን ይደውሉልን"
+    }
   }
 }

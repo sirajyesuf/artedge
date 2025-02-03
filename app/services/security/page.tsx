@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function ServiceFeature({
   icon: Icon,
@@ -28,46 +29,44 @@ function ServiceFeature({
   );
 }
 
-const securitySolutions = [
-  {
-    icon: ShieldCheck,
-    title: "VIP protection service",
-    description:
-      "Professional security personnel trained to handle various security scenarios with expertise and discretion.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Event Escort Service",
-    description:
-      "Comprehensive security management for events of all sizes, ensuring smooth operations and guest safety.",
-  },
-  {
-    icon: Package,
-    title: "Asset escort service",
-    description:
-      "Round-the-clock surveillance and monitoring services to keep your premises secure at all times.",
-  },
-  {
-    icon: UserCheck,
-    title: "escort service",
-    description:
-      "Customized access control solutions to manage visitor traffic and secure your premises.",
-  },
-  {
-    icon: Camera,
-    title: "Survilance and monitoring service",
-    description:
-      "Expert security consulting services to help you design and implement a robust security strategy.",
-  },
-  {
-    icon: Zap,
-    title: "crisis management and  emergency response service",
-    description:
-      "Rapid response teams ready to handle emergencies and security incidents with speed and efficiency.",
-  },
-];
-
 function App() {
+  const t = useTranslations("SecurityService");
+
+  const securitySolutions = [
+    {
+      icon: ShieldCheck,
+      title: t("services.vip_protection_service"),
+      description: t("services.vip_protection_service_description"),
+    },
+    {
+      icon: CalendarCheck,
+      title: t("services.event_escort_service"),
+      description: t("services.event_escort_service_description"),
+    },
+    {
+      icon: Package,
+      title: t("services.asset_escort_service"),
+      description: t("services.asset_escort_service_description"),
+    },
+    {
+      icon: UserCheck,
+      title: t("services.escort_service"),
+      description: t("services.escort_service_description"),
+    },
+    {
+      icon: Camera,
+      title: t("services.survilance_and_monitoring_service"),
+      description: t("services.survilance_and_monitoring_service_description"),
+    },
+    {
+      icon: Zap,
+      title: t("services.crisis_management_and_emergency_response_service"),
+      description: t(
+        "services.crisis_management_and_emergency_response_service_description"
+      ),
+    },
+  ];
+
   return (
     <>
       <div className="min-h-screen bg-gray-50">
@@ -104,11 +103,10 @@ function App() {
             <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
               <div className="max-w-2xl relative z-10">
                 <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-                  Your Trusted Partner in Security Solutions
+                  {t("title")}
                 </h1>
                 <p className="mt-4 text-xl text-blue-100 mb-8">
-                  Serving businesses, events, and communities with unmatched
-                  expertise.
+                  {t("description")}
                 </p>
               </div>
             </div>
