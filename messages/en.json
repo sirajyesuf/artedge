@@ -195,6 +195,10 @@
       "squeegees": "squeegees",
       "sprays": "cleaning sprays",
       "sponges": "sponges"
+    },
+    "cta": {
+      "title": "Ready to Get Your Supplies?",
+      "button": "Contact Us Today"
     }
   },
   "skill": {
