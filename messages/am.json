@@ -142,6 +142,10 @@
       "survilance_and_monitoring_service_description": "የተለያዩ የደህንነት ስትራቴጂዎችን ለመንደፍ እና ለመተግበር የሚያግዙ የደህንነት አማካሪ አገልግሎቶች።",
       "crisis_management_and_emergency_response_service": "የአደጋ አስተዳደር እና የአደጋ ምላሽ አገልግሎት",
       "crisis_management_and_emergency_response_service_description": "በፍጥነት እና በብቃት የአደጋዎችን እና የደህንነት አደጋዎችን ለመቆጣጠር የሚያግዙ ፈጣን ምላሽ ቡድኖች።"
+    },
+    "cta": {
+      "title": "የእርስዎን ደህንነት ለማሻሻል ዝግጁ ነዎት?",
+      "button": "ዛሬ ያግኙን"
     }
   },
   "features": {

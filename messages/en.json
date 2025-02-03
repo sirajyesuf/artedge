@@ -134,6 +134,10 @@
       "survilance_and_monitoring_service_description": "Expert security consulting services to help you design and implement a robust security strategy",
       "crisis_management_and_emergency_response_service": "crisis management and emergency response service",
       "crisis_management_and_emergency_response_service_description": "Rapid response teams ready to handle emergencies and security incidents with speed and efficiency."
+    },
+    "cta": {
+      "title": "Ready to Enhance Your Security?",
+      "button": "Contact Us Today"
     }
   },
   "CleaningService": {
