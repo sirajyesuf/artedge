@@ -5,15 +5,16 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import LanguageSwitcher from "./language-switcher";
-
+import { useTranslations } from "next-intl";
 export function Navbar() {
+  const t = useTranslations("NavBar");
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/#service_section" },
-    { name: "AboutUs", href: "/aboutus" },
-    { name: "ContactUs", href: "/contactus" },
+    { name: t("home"), href: "/" },
+    { name: t("services"), href: "/#service_section" },
+    { name: t("aboutus"), href: "/aboutus" },
+    { name: t("contactus"), href: "/contactus" },
   ];
 
   return (
