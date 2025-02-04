@@ -12,54 +12,61 @@ import {
 } from "@/components/ui/carousel";
 
 import React from "react";
-
-const testimonials = [
-  {
-    company: "kadisco general hospital",
-    text: "Art Edge Trading has been a trusted partner in delivering reliable and professional security services. Their attention to detail and commitment to excellence ensure our safety and peace of mind.",
-    rating: 5,
-  },
-  {
-    company: "kurb general contractor.",
-    text: "Partnering with Art Edge Trading has been a game-changer for our operations. Their exceptional security services, professional cleaning solutions, and high-quality cleaning supplies have created a safe, clean, and efficient environment for our business.",
-    rating: 5,
-  },
-  {
-    company: "luci engineering plc",
-    text: "Art Edge Trading provides outstanding security services, ensuring safety and peace of mind at all times.",
-    rating: 5,
-  },
-  {
-    company: "chilallo enterprise",
-    text: "Reliable, professional, and always attentive—Art Edge Trading sets the standard for security services.",
-    rating: 5,
-  },
-  {
-    company: "kolfe keranio sub city public property administration office",
-    text: "Art Edge Trading proudly supported the government’s program, helping provide food to those in need with dedication and care.",
-    rating: 5,
-  },
-  {
-    company: "st.paul's hospital millennium medical college",
-    text: "Art Edge Trading has been a trusted partner in maintaining the cleanliness of our college facilities and buildings, delivering exceptional cleaning services with reliability and professionalism.",
-    rating: 5,
-  },
-  {
-    company:
-      "cggc operation and maintenance project department of kality waste water treatment  plant in ethiopia",
-    text: "Art Edge Trading has been a reliable partner in providing security services, ensuring the safety and security of our plant properties and staff members by deployinh highly trained security guards.",
-    rating: 5,
-  },
-  {
-    company: "seventh-day adventist church",
-    text: "Art Edge Trading has been a trusted partner in delivering reliable and professional security services.",
-    rating: 5,
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
+  const t = useTranslations("Testimonials");
+
+  const testimonials = [
+    {
+      company: t("kadiscoGeneralHospital.company"),
+      text: t("kadiscoGeneralHospital.text"),
+      rating: 5,
+    },
+    {
+      company: t("kurbGeneralContractor.company"),
+      text: t("kurbGeneralContractor.text"),
+      rating: 5,
+    },
+    {
+      company: t("luciEngineeringPlc.company"),
+      text: t("luciEngineeringPlc.text"),
+      rating: 5,
+    },
+    {
+      company: t("chilalloEnterprise.company"),
+      text: t("chilalloEnterprise.text"),
+      rating: 5,
+    },
+    {
+      company: t(
+        "kolfeKeranioSubCityPublicPropertyAdministrationOffice.company"
+      ),
+      text: t("kolfeKeranioSubCityPublicPropertyAdministrationOffice.text"),
+      rating: 5,
+    },
+    {
+      company: "stPaulsHospitalMillenniumMedicalCollege.company",
+      text: "stPaulsHospitalMillenniumMedicalCollege.company",
+      rating: 5,
+    },
+    {
+      company: t(
+        "cggcOperationAndMaintenanceProjectDepartmentOfKalityWasteWaterTreatmentPlant.company"
+      ),
+      text: t(
+        "cggcOperationAndMaintenanceProjectDepartmentOfKalityWasteWaterTreatmentPlant.text"
+      ),
+      rating: 5,
+    },
+    {
+      company: t("seventhDayAdventistChurch.company"),
+      text: t("seventhDayAdventistChurch.text"),
+      rating: 5,
+    },
+  ];
 
   React.useEffect(() => {
     if (!api) {
@@ -77,11 +84,12 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-600">
-            What Our Clients Say
+            
+            {t("title")}
           </h2>
           <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Trusted by businesses and communities for reliable security and
-            cleaning services.
+
+            {t("description")}
           </p>
         </div>
         <div className="mx-auto max-w-5xl mt-12">

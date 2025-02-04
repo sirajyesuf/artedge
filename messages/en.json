@@ -251,5 +251,42 @@
       "description": "Contact us directly, and our team will assist you.",
       "button": "Call us now"
     }
+  },
+
+  "Testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Trusted by businesses and communities for reliable security and cleaning services.",
+    "kadiscoGeneralHospital": {
+      "company": "Kadisco General Hospital",
+      "text": "Art Edge Trading has been a trusted partner in delivering reliable and professional security services. Their attention to detail and commitment to excellence ensure our safety and peace of mind."
+    },
+    "kurbGeneralContractor": {
+      "company": "Kurb General Contractor",
+      "text": "Partnering with Art Edge Trading has been a game-changer for our operations. Their exceptional security services, professional cleaning solutions, and high-quality cleaning supplies have created a safe, clean, and efficient environment for our business."
+    },
+    "luciEngineeringPlc": {
+      "company": "Luci Engineering PLC",
+      "text": "Art Edge Trading provides outstanding security services, ensuring safety and peace of mind at all times."
+    },
+    "chilalloEnterprise": {
+      "company": "Chilallo Enterprise",
+      "text": "Reliable, professional, and always attentive—Art Edge Trading sets the standard for security services."
+    },
+    "kolfeKeranioSubCityPublicPropertyAdministrationOffice": {
+      "company": "Kolfe Keranio Sub City Public Property Administration Office",
+      "text": "Art Edge Trading proudly supported the government’s program, helping provide food to those in need with dedication and care."
+    },
+    "stPaulsHospitalMillenniumMedicalCollege": {
+      "company": "St. Paul's Hospital Millennium Medical College",
+      "text": "Art Edge Trading has been a trusted partner in maintaining the cleanliness of our college facilities and buildings, delivering exceptional cleaning services with reliability and professionalism."
+    },
+    "cggcOperationAndMaintenanceProjectDepartmentOfKalityWasteWaterTreatmentPlant": {
+      "company": "CGGC Operation and Maintenance Project Department of Kality Waste Water Treatment Plant",
+      "text": "Art Edge Trading has been a reliable partner in providing security services, ensuring the safety and security of our plant properties and staff members by deploying highly trained security guards."
+    },
+    "seventhDayAdventistChurch": {
+      "company": "Seventh-day Adventist Church",
+      "text": "Art Edge Trading has been a trusted partner in delivering reliable and professional security services."
+    }
   }
 }
