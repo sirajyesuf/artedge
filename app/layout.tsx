@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Art Edge Trading PLC - Security, Cleaning & Training Services",
   description:
     "Art Edge Trading PLC, established in 2021, is a leading provider of security, cleaning, skill enhancement, and material supply services in Ethiopia. We specialize in armed and unarmed security personnel, janitorial services, training programs, and cleaning equipment supply.",
+  alternates: {
+    canonical: "https://www.artedgesecurityandcleaning.com",
+    languages: {
+      "x-default": "https://www.artedgesecurityandcleaning.com",
+    },
+  },
   keywords:
     "security services, cleaning services, facility management, skill training, material supply, guarding, surveillance, janitorial, PPE, security uniforms, Ethiopia, Addis Ababa",
   authors: [{ name: "Art Edge Trading PLC" }],
