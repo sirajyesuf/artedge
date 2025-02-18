@@ -131,11 +131,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-800 text-center flex flex-row  justify-between items-center">
+          <div className="text-gray-400 text-sm">
             &copy; {new Date().getFullYear()} Art Edge Trading PLC. All rights
             reserved.
-          </p>
+          </div>
+          <div className="text-gray-400 text-sm">
+            <p>Powered by Santa Trading PLC.</p>
+          </div>
         </div>
       </div>
     </footer>
