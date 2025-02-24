@@ -87,7 +87,7 @@ export default function AboutUs() {
             <div className="bg-white p-8 rounded-lg shadow-none">
               <div className="flex items-center mb-6">
                 <Target className="w-8 h-8 text-blue-600 mr-3" />
-                <h2 className="text-2xl font-bold text-gray-800">
+                <h2 className="text-2xl font-bold text-gray-800 capitalize">
                   {t("our_mission")}
                 </h2>
               </div>
@@ -97,7 +97,7 @@ export default function AboutUs() {
             <div className="bg-white p-8 rounded-lg shadow-none">
               <div className="flex items-center mb-6">
                 <Sparkles className="w-8 h-8 text-blue-600 mr-3" />
-                <h2 className="text-2xl font-bold text-gray-800">
+                <h2 className="text-2xl font-bold text-gray-800 capitalize">
                   {t("our_vission")}
                 </h2>
               </div>
@@ -120,7 +120,7 @@ export default function AboutUs() {
                 className="text-center p-6 bg-white rounded-lg shadow-none"
               >
                 <value.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3 capitalize">
                   {value.title}
                 </h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -149,7 +149,9 @@ export default function AboutUs() {
                 className="p-6 bg-[#2563eb] rounded-sm shadow-none"
               >
                 <feature.icon className="w-10 h-10 text-white mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 capitalize">
+                  {feature.title}
+                </h3>
                 <p className="text-blue-100">{feature.description}</p>
               </div>
             ))}
