@@ -57,6 +57,11 @@ export default async function RootLayout({
           name="google-site-verification"
           content="Cqz7vb2pBilwmVi2GmmIJZtA662R9kjTkC63uoq8KTM"
         />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
