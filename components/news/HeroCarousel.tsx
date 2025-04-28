@@ -1,19 +1,17 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { NewsSlide, NewsItem } from "@/types/index";
 
 interface HeroCarouselProps {
   slides: NewsSlide[];
   selectedNews: NewsItem | null;
-  onBackClick: () => void;
 }
 
 const HeroCarousel: React.FC<HeroCarouselProps> = ({
   slides,
   selectedNews,
-  onBackClick,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentNewsImage, setCurrentNewsImage] = useState(0);

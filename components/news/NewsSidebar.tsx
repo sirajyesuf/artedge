@@ -2,7 +2,7 @@
 
 import React from "react";
 import { NewsItem } from "@/types/index";   
-
+import Image from "next/image";
 interface NewsSidebarProps {
   news: NewsItem[];
   onNewsClick: (news: NewsItem) => void;
@@ -25,10 +25,12 @@ const NewsSidebar: React.FC<NewsSidebarProps> = ({
           }`}
         >
           <div className="flex-shrink-0 w-20 h-20">
-            <img
+            <Image
               src={item.images[0].url}
               alt={item.title}
               className="w-full h-full object-cover rounded-md"
+              width={80}
+              height={80}
             />
           </div>
           <div className="flex-1 min-w-0">
