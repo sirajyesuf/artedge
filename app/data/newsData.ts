@@ -83,4 +83,55 @@ export const sidebarNews: NewsItem[] = [
     ],
     url: "#",
   },
+  {
+    id: 3,
+    title: "ArtEdge 2025 Annual Meeting",
+    images: [
+      {
+        url: "/newsphoto/2025_1.jpg",
+        caption: "photo one",
+      },
+      {
+        url: "/newsphoto/2025_2.jpg",
+        caption: "photo two",
+      },
+      {
+        url: "/newsphoto/2025_3.jpg",
+        caption: "photo three",
+      },
+      {
+        url: "/newsphoto/2025_4.jpg",
+        caption: "photo four",
+      },
+    ],
+    url: "#",
+  },
+
+  {
+    id: 4,
+    title: "ArtEdge 2024 Annual Meeting",
+    images: [
+      {
+        url: "/newsphoto/2024_1.jpg",
+        caption: "photo one",
+      },
+      {
+        url: "/newsphoto/2024_2.jpg",
+        caption: "photo two",
+      },
+      {
+        url: "/newsphoto/2024_3.jpg",
+        caption: "photo three",
+      },
+      {
+        url: "/newsphoto/2024_4.jpg",
+        caption: "photo four",
+      },
+      {
+        url: "/newsphoto/2024_5.jpg",
+        caption: "photo five",
+      },
+    ],
+    url: "#",
+  },
 ];

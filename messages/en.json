@@ -1,30 +1,31 @@
 {
   "NavBar": {
-    "home": "home",
-    "services": "services",
-    "aboutus": "aboutus",
-    "contactus": "contactus"
+    "home": "Home",
+    "services": "Services",
+    "aboutus": "AboutUs",
+    "contactus": "ContactUs",
+    "gallery": "Gallery"
   },
   "Hero": {
     "slogan": "Your Trusted Partner in Security, Cleaning & Skill Enhancement.",
     "description": "Reliable services tailored to ensure safety, hygiene, and operational success",
-    "button": "explore our services"
+    "button": "Explore Our Services"
   },
   "OurService": {
-    "title": "our services",
+    "title": "Our Services",
     "description": "Reliable solutions tailored to meet your needs in security, cleanliness, and professional development",
-    "learnmore": "learnmore",
-    "security_service": "security service",
+    "learnmore": "Learn More",
+    "security_service": "Security Service",
     "security_service_description": "Professional armed and unarmed security personnel, mobile patrols, event security, and advanced surveillance solutions.",
-    "cleaning_service": "cleaning service",
+    "cleaning_service": "Cleaning Service",
     "cleaning_service_description": "Comprehensive cleaning solutions for offices, residences, industries, and post-construction projects.",
-    "supplies_service": "provision of security and cleaning supplies",
+    "supplies_service": "Provision Of Security And Cleaning Supplies",
     "supplies_service_description": "Providing high-quality security uniforms, cleaning supplies, tools, and personal protective equipment to ensure safety and efficiency.",
-    "skill_supplies": "skill development",
+    "skill_supplies": "Skill Development",
     "skill_supplies_description": "Skill-enhancing programs for security staff, cleaning personnel, and customer service teams."
   },
   "WhyChooseUS": {
-    "title": "why choose us",
+    "title": "Why Choose Us",
     "description": "We deliver excellence through our commitment to quality, reliability, and customer satisfaction",
     "experience": "experience",
     "experience_description": "Our team of trained professionals have years of experience in their respective fields.",
@@ -46,7 +47,7 @@
     "successfull_projects": "Projects successfully completed for businesses and communities."
   },
   "OurTrustedClients": {
-    "title": "our trusted clients"
+    "title": "Our Trusted Clients"
   },
   "WhatOurClientsSay": {
     "title": "What Our Clients Say",
@@ -113,7 +114,7 @@
       "description": "the innovative minds behind our success"
     },
     "ourvissioninframes": {
-      "title": "ourvission in frames",
+      "title": "our vission in frames",
       "description": "Celebrating the creative visionaries shaping our journey."
     }
   },
@@ -145,9 +146,9 @@
     "description": "At Art Edge, we deliver exceptional cleaning services tailored to your needs. From offices to homes, our expert team ensures spotless, healthy environments using eco-friendly solutions and advanced cleaning techniques",
     "services": {
       "title": "What We Offer",
-      "office_cleaning": "office cleaning",
+      "office_cleaning": "Office Cleaning",
       "office_cleaning_description": "Professional cleaning services tailored for office spaces, ensuring a pristine work environment.",
-      "residential_cleaning": "residential cleaning",
+      "residential_cleaning": "Residential Cleaning",
       "residential_cleaning_description": "Comprehensive home cleaning services that maintain the comfort and hygiene of your living space.",
       "industrial_cleaning": "Industrial Cleaning",
       "industrial_cleaning_description": "Specialized cleaning solutions for industrial facilities, warehouses, and manufacturing plants.",
