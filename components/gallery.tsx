@@ -3,6 +3,43 @@ import { useTranslations } from "next-intl";
 
 const images = [
   {
+    src: "/newsphoto/2025_1.jpg",
+    alt: "Gallery Image 1",
+  },
+
+  {
+    src: "/newsphoto/2025_2.jpg",
+    alt: "Gallery Image 2",
+  },
+  {
+    src: "/newsphoto/2025_3.jpg",
+    alt: "Gallery Image 3",
+  },
+  {
+    src: "/newsphoto/2025_4.jpg",
+    alt: "Gallery Image 4",
+  },
+  {
+    src: "/newsphoto/2024_1.jpg",
+    alt: "Gallery Image 5",
+  },
+  {
+    src: "/newsphoto/2024_2.jpg",
+    alt: "Gallery Image 6",
+  },
+  {
+    src: "/newsphoto/2024_3.jpg",
+    alt: "Gallery Image 7",
+  },
+  {
+    src: "/newsphoto/2024_4.jpg",
+    alt: "Gallery Image 8",
+  },
+  {
+    src: "/newsphoto/2024_5.jpg",
+    alt: "Gallery Image 9",
+  },
+  {
     src: "/gallery/3.png",
     alt: "Gallery Image 3",
   },
@@ -29,7 +66,7 @@ const images = [
 ];
 
 export default function ImageGallery() {
-  const t = useTranslations("AboutUS")
+  const t = useTranslations("AboutUS");
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
