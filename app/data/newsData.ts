@@ -31,6 +31,56 @@ export const heroSlides: NewsSlide[] = [
 export const sidebarNews: NewsItem[] = [
   {
     id: 1,
+    title: "ArtEdge 2025 Annual Meeting",
+    images: [
+      {
+        url: "/newsphoto/2025_1.jpg",
+        caption: "photo one",
+      },
+      {
+        url: "/newsphoto/2025_2.jpg",
+        caption: "photo two",
+      },
+      {
+        url: "/newsphoto/2025_3.jpg",
+        caption: "photo three",
+      },
+      {
+        url: "/newsphoto/2025_4.jpg",
+        caption: "photo four",
+      },
+    ],
+    url: "#",
+  },
+  {
+    id: 2,
+    title: "ArtEdge 2024 Annual Meeting",
+    images: [
+      {
+        url: "/newsphoto/2024_1.jpg",
+        caption: "photo one",
+      },
+      {
+        url: "/newsphoto/2024_2.jpg",
+        caption: "photo two",
+      },
+      {
+        url: "/newsphoto/2024_3.jpg",
+        caption: "photo three",
+      },
+      {
+        url: "/newsphoto/2024_4.jpg",
+        caption: "photo four",
+      },
+      {
+        url: "/newsphoto/2024_5.jpg",
+        caption: "photo five",
+      },
+    ],
+    url: "#",
+  },
+  {
+    id: 3,
     title: "Art Edge Trading giving training for COCA COLA staff members.",
     images: [
       {
@@ -49,7 +99,7 @@ export const sidebarNews: NewsItem[] = [
     url: "#",
   },
   {
-    id: 2,
+    id: 4,
     title: "ArtEdge officials conduct a work visit",
     images: [
       {
@@ -79,29 +129,6 @@ export const sidebarNews: NewsItem[] = [
       {
         url: "/newsphoto/photo14.jpg",
         caption: "photo seven",
-      },
-    ],
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "ArtEdge 2025 Annual Meeting",
-    images: [
-      {
-        url: "/newsphoto/2025_1.jpg",
-        caption: "photo one",
-      },
-      {
-        url: "/newsphoto/2025_2.jpg",
-        caption: "photo two",
-      },
-      {
-        url: "/newsphoto/2025_3.jpg",
-        caption: "photo three",
-      },
-      {
-        url: "/newsphoto/2025_4.jpg",
-        caption: "photo four",
       },
     ],
     url: "#",
