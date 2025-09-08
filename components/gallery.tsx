@@ -20,6 +20,22 @@ const images = [
     alt: "Gallery Image 4",
   },
   {
+    src: "/newsphoto/2025_5.jpg",
+    alt: "Gallery Image 5",
+  },
+  {
+    src: "/newsphoto/2025_6.jpg",
+    alt: "Gallery Image 6",
+  },
+  {
+    src: "/newsphoto/2025_7.jpg",
+    alt: "Gallery Image 7",
+  },
+  {
+    src: "/newsphoto/2025_8.jpg",
+    alt: "Gallery Image 8",
+  },
+  {
     src: "/newsphoto/2024_1.jpg",
     alt: "Gallery Image 5",
   },
@@ -40,6 +56,18 @@ const images = [
     alt: "Gallery Image 9",
   },
   {
+    src: "/newsphoto/2024_6.jpg",
+    alt: "Gallery Image 6",
+  },
+  {
+    src: "/newsphoto/2024_7.jpg",
+    alt: "Gallery Image 7",
+  },
+  {
+    src: "/newsphoto/2024_8.jpg",
+    alt: "Gallery Image 8",
+  },
+  {
     src: "/gallery/3.png",
     alt: "Gallery Image 3",
   },
@@ -54,10 +82,6 @@ const images = [
   {
     src: "/gallery/6.png",
     alt: "Gallery Image 6",
-  },
-  {
-    src: "/gallery/7.png",
-    alt: "Gallery Image 7",
   },
   {
     src: "/gallery/8.png",
