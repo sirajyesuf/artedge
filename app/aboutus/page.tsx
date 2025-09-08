@@ -66,7 +66,7 @@ export default function AboutUs() {
   ];
   return (
     <div className="min-h-screen">
-      <div className="h-[40vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center bg-cover">
+      <div className="h-[60vh] bg-gradient-to-br from-blue-50 via-blue-100 to-white flex items-center bg-cover pt-4">
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-25"></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-2xl">
