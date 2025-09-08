@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <main>
-        <Hero />
+        <div className="border-none border-t-lime-700 p-0 mt-20">
+          <Hero />
+        </div>
         <NewsSection />
         <Services />
         <WhyChooseUS />

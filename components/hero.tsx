@@ -6,9 +6,9 @@ const Hero = () => {
 
   return (
     <div
-      className="relative h-[70vh] bg-cover bg-center"
+      className="relative h-[80vh] bg-cover bg-center"
       style={{
-        backgroundImage: `url('hero.png')`,
+        backgroundImage: `url('hero5.jpg')`,
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-500/80 to-blue-900/90"></div>
