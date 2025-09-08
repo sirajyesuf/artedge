@@ -38,10 +38,6 @@ export const sidebarNews: NewsItem[] = [
         caption: "photo one",
       },
       {
-        url: "/newsphoto/2025_2.jpg",
-        caption: "photo two",
-      },
-      {
         url: "/newsphoto/2025_3.jpg",
         caption: "photo three",
       },
@@ -54,20 +50,20 @@ export const sidebarNews: NewsItem[] = [
         caption: "photo five",
       },
       {
-        url: "/newsphoto/2025_6.jpg",
-        caption: "photo six",
-      },
-      {
         url: "/newsphoto/2025_7.jpg",
         caption: "photo seven",
       },
       {
-        url: "/newsphoto/2025_8.jpg",
-        caption: "photo eight",
-      },
-      {
         url: "/newsphoto/2025_9.jpg",
         caption: "photo nine",
+      },
+      {
+        url: "/newsphoto/2025_6.jpg",
+        caption: "photo six",
+      },
+      {
+        url: "/newsphoto/2025_2.jpg",
+        caption: "photo two",
       },
     ],
     url: "#",
@@ -81,32 +77,28 @@ export const sidebarNews: NewsItem[] = [
         caption: "photo one",
       },
       {
-        url: "/newsphoto/2024_2.jpg",
-        caption: "photo two",
-      },
-      {
         url: "/newsphoto/2024_3.jpg",
         caption: "photo three",
-      },
-      {
-        url: "/newsphoto/2024_4.jpg",
-        caption: "photo four",
-      },
-      {
-        url: "/newsphoto/2024_5.jpg",
-        caption: "photo five",
       },
       {
         url: "/newsphoto/2024_6.jpg",
         caption: "photo six",
       },
       {
+        url: "/newsphoto/2024_8.jpg",
+        caption: "photo eight",
+      },
+      {
+        url: "/newsphoto/2024_5.jpg",
+        caption: "photo five",
+      },
+      {
         url: "/newsphoto/2024_7.jpg",
         caption: "photo seven",
       },
       {
-        url: "/newsphoto/2024_8.jpg",
-        caption: "photo eight",
+        url: "/newsphoto/2024_2.jpg",
+        caption: "photo two",
       },
     ],
     url: "#",
