@@ -49,6 +49,26 @@ export const sidebarNews: NewsItem[] = [
         url: "/newsphoto/2025_4.jpg",
         caption: "photo four",
       },
+      {
+        url: "/newsphoto/2025_5.jpg",
+        caption: "photo five",
+      },
+      {
+        url: "/newsphoto/2025_6.jpg",
+        caption: "photo six",
+      },
+      {
+        url: "/newsphoto/2025_7.jpg",
+        caption: "photo seven",
+      },
+      {
+        url: "/newsphoto/2025_8.jpg",
+        caption: "photo eight",
+      },
+      {
+        url: "/newsphoto/2025_9.jpg",
+        caption: "photo nine",
+      },
     ],
     url: "#",
   },
@@ -75,6 +95,18 @@ export const sidebarNews: NewsItem[] = [
       {
         url: "/newsphoto/2024_5.jpg",
         caption: "photo five",
+      },
+      {
+        url: "/newsphoto/2024_6.jpg",
+        caption: "photo six",
+      },
+      {
+        url: "/newsphoto/2024_7.jpg",
+        caption: "photo seven",
+      },
+      {
+        url: "/newsphoto/2024_8.jpg",
+        caption: "photo eight",
       },
     ],
     url: "#",
