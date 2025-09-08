@@ -5,12 +5,7 @@ const Hero = () => {
   const t = useTranslations("Hero");
 
   return (
-    <div
-      className="relative h-[80vh] bg-cover bg-center"
-      style={{
-        backgroundImage: `url('hero5.jpg')`,
-      }}
-    >
+    <div className="relative h-[50vh] md:h-[80vh] bg-cover bg-center bg-[url('/newsphoto/2025_2.jpg')] md:bg-[url('/hero5.jpg')]">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-500/80 to-blue-900/90"></div>
 
       <div className="relative max-w-full mx-auto h-full">
