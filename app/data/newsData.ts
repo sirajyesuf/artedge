@@ -72,14 +72,14 @@ export const sidebarNews: NewsItem[] = [
     id: 2,
     title: "ArtEdge 2024 Annual Meeting",
     images: [
-      {
-        url: "/newsphoto/2024_1.jpg",
-        caption: "photo one",
-      },
-      {
-        url: "/newsphoto/2024_3.jpg",
-        caption: "photo three",
-      },
+      // {
+      //   url: "/newsphoto/2024_1.jpg",
+      //   caption: "photo one",
+      // },
+      // {
+      //   url: "/newsphoto/2024_3.jpg",
+      //   caption: "photo three",
+      // },
       {
         url: "/newsphoto/2024_6.jpg",
         caption: "photo six",

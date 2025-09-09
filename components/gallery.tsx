@@ -35,18 +35,18 @@ const images = [
     src: "/newsphoto/2025_8.jpg",
     alt: "Gallery Image 8",
   },
-  {
-    src: "/newsphoto/2024_1.jpg",
-    alt: "Gallery Image 5",
-  },
+  // {
+  //   src: "/newsphoto/2024_1.jpg",
+  //   alt: "Gallery Image 5",
+  // },
   {
     src: "/newsphoto/2024_2.jpg",
     alt: "Gallery Image 6",
   },
-  {
-    src: "/newsphoto/2024_3.jpg",
-    alt: "Gallery Image 7",
-  },
+  // {
+  //   src: "/newsphoto/2024_3.jpg",
+  //   alt: "Gallery Image 7",
+  // },
   {
     src: "/newsphoto/2024_4.jpg",
     alt: "Gallery Image 8",
